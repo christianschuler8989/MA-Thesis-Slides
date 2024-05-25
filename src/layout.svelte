@@ -22,8 +22,8 @@
 
 <style>
 	:root{
-		--tumblue: #0065BD;
-		--secondblue: #8AB1DA;
+		--tumblue: #177717;
+		--secondblue: #66d666;
 		--themecolor: var(--tumblue);
 		--themecolorlight: var(--secondblue);
 	}

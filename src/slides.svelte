@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Presentation, Slide, Notes } from '@components'
+	import { Presentation, Slide, Media, FitText, Step, Stack, Code, Notes } from '@components'
 	import Layout from './layout.svelte'
 </script>
 
@@ -13,12 +13,12 @@
 <Presentation>	
 	<script>
 		// information about this presentation 
-		const author = "Anran Wang, Christian Schuler"; 
-		const authorshort = "Wang, Schuler"; 
-		const title = "This Is My Own Title";
-		const subtitle = "And here is my subtitle";
+		const author = "Christian Schuler"; 
+		const authorshort = "Schuler"; 
+		const title = "Neural Machine Translation for Low-Resource Language Variations on Synthetic Data by Incorporating Linguistic Information";
+		const subtitle = "Master's Thesis";
 		const department = "Department of Informatics"; 
-		const university = "Technical University of Munich"; 
+		const university = "University of Hamburg"; 
 		var currentChapterName="";
 		var currentChapterNumber=0;
 		var chapterNames=[];
@@ -40,7 +40,7 @@
 
 	<!-- title page -->
 	<Slide><Layout>
-		<div class="m-16 flex h-[25vh] w-[90vw] bg-[var(--themecolor)] text-white items-center justify-center gap-[100px]">
+		<div class="m-16 flex h-[30vh] w-[95vw] bg-[var(--themecolor)] text-white items-center justify-center gap-[100px]">
 			<div>
 				<div class="text-[6vh]">
 					<span id="mytitle"> </span>
@@ -59,14 +59,15 @@
 		<div class="text-[3vh]"> 
 			<span id="myuni"></span>
 		</div>
-		<div class="text-[3.5vh]"> 
+		<div class="flex items-center justify-center">
+			<img class="h-[18vh] align-middle" src="up-uhh-logo-u-2010-u-png.png" alt="uhh logo">
+		</div>
+		<div class="text-[2.5vh]"> 
 			<br>
 			<span id="mydate"></span>
 		</div>
-		<br>
-		<div class="flex items-center justify-center">
-			<img class="h-[10vh] align-middle" src="title-logo.svg" alt="tum logo">
-		</div>
+		
+		
 		<!-- fill in the data for this presentation  -->
 		<script> 
 			document.getElementById("mytitle").innerHTML=title;
@@ -78,6 +79,7 @@
 		</script>
 	</Layout></Slide>
 	<!-- TOC -->
+	<!--
 	<Slide>
 		<script>
 			toc=true; // decides whether to generate table of content page
@@ -89,224 +91,465 @@
 			</toc>
 		</Layout>
 	</Slide>
+	-->
 	
-	<!-- intro -->
-	<script>newChapter("Introduction")</script>
-	<Slide><Layout>
-		<titlebar > On how to use these Presentation Slides  </titlebar>
+	
+
+	<!-- <script>newChapter("Greeting");</script> -->
+	<!-- <script>newSection("Title");</script> -->
+	<Slide animate><Layout>
+		<titlebar> Suspects </titlebar>
 		<mybody>
-			<ul class="a">
-				<li>Press F to enter full screen.</li>
-				<ul class="b"> 
-					<li>To better check the layout.</li>
-				</ul>
-				<br>
-				<li>Press fn+s to enter presenter mode.</li>
-				<ul class="b"> 
-					<li>Where you can see the next slide.</li>
-					<li>And read your notes for each slide.</li>
-				</ul>
-			</ul>
+			<!-- <div data-id="header" class="text-center w-full h-full text-[60px] place-content-center flex items-center rounded gap-4 p-4">
+				<p data-id="header-text" class="text-[60px]">ChameleonMT</p>
+				<Media data-id="header-logo" class="object-contain h-[80px] w-[30%]" src="project_logo.png" type="img"/>
+				<p data-id="header-text" class="text-[60px]">Master Thesis</p>
+			</div> -->
+	
+			<!-- <div data-id="header-bot" class="text-center h-full w-full place-content-center flex items-center rounded gap-4 pg-2 p-4 bg-gray-600">
+				<FitText>Neural Machine Translation for Low-Resource Language Variations <br> on Synthetic Data by Incorporating Linguistic Information</FitText>
+			</div> -->
+			<div class="grid" style="grid-template-columns: auto auto auto auto; mx-auto my-auto;">
+				
+				<!-- Names -->
+				<div class="flex w-[25vw] items-center justify-center gap-[10px]">
+					Christian Schuler <br> (Student)
+				</div>
+				<div class="flex w-[25vw] items-center justify-center gap-[10px]">
+					Dr. Sina Ahmadi <br> (Supervisor)
+				</div>
+				<div class="flex w-[25vw] items-center justify-center gap-[10px]">
+					Dr. Seid Muhie Yimam <br> (Supervisor & Examiner)
+				</div>
+				<div class="flex w-[25vw] items-center justify-center gap-[10px]">
+					Prof. Dr. Chris Biemann <br> (Examiner)
+				</div>
+
+				<!-- Images -->
+				<figure class="h-[60vh] w-[20vw] float-left mx-auto my-auto">
+					<a href="https://christianschuler8989.github.io/">
+						<img src="student_christian.jpg" alt="christian" class="h-[40vh]">
+						<figcaption class="text-[2.3vh]">
+							Master student in computer science at University of Hamburg.
+						</figcaption>
+						<figcaption class="text-[1.3vh]">
+							With a passion for languages and colors, he aims to do a PhD. <br>Additionally, he eats more pizza in one year than any of you in your lifetime!
+						</figcaption>
+					</a>
+				</figure>
+				
+				<figure class="h-[60vh] w-[20vw] float-left mx-auto my-auto">
+					<a href="https://sinaahmadi.github.io/">
+						<img src="supervisor_sina.png" alt="sina" class="h-[40vh]">
+					</a>
+					<figcaption class="text-[2.3vh]">
+						Postdoctoral researcher affiliated with Prof. Rico Sennrich’s group at the Department of Computational Linguistics at University of Zurich. 
+					</figcaption>
+					<figcaption class="text-[1.3vh]">
+						Sina always made sure to bring me back on track when I got too interested in side projects and literature!
+					</figcaption>
+				</figure>
+				<figure class="h-[60vh] w-[20vw] float-left mx-auto my-auto">
+					<a href="https://seyyaw.github.io/">
+						<img src="supervisor_seid.jpeg" alt="seid" class="h-[40vh]">
+					</a>
+					<figcaption class="text-[2.3vh]">
+						Technical Lead at HCDS and Research Associate at Language Technology Group, under the supervision of Prof. Chris Biemann.
+					</figcaption>
+					<figcaption class="text-[1.3vh]">
+						Seid always kept a positive spirit and turned into an accomplice for some of the interesting side projects!
+					</figcaption>
+				</figure>
+				<figure class="h-[60vh] w-[20vw] float-left mx-auto my-auto">
+					<a href="https://www.inf.uni-hamburg.de/en/inst/ab/lt/people/chris-biemann.html">
+						<img src="examiner_chris.jpg" alt="chris" class="h-[40vh]">
+					</a>
+					<figcaption class="text-[2.3vh]">
+						Head of the Language Technology group at Universität Hamburg. 
+					</figcaption>
+					<figcaption class="text-[1.3vh]">
+						Chris is the best lazerkasoo player I have ever heard of!
+					</figcaption>
+				</figure>
+
+				<!-- Logos -->
+				<figure class="flex h-[15vh] w-[25vw] items-center justify-center mx-auto my-auto">
+					<img src="up-uhh-logo-u-2010-u-png.png" alt="uhh-logo" class="h-[15vh]">
+				</figure>
+				<!-- <div class="grid" style="grid-template-columns: auto; mx-auto my-auto;"> -->
+				<figure class="flex h-[15vh] w-[25vw] items-center justify-center mx-auto my-auto">
+					<img src="Logo_university-of-zurich-eth-zurich-biointerfaces-international-2018-zurich-lucerne-university-of-applied-sciences-and-arts-others.png" alt="uhh-logo" class="h-[7vh]">
+				<!-- </figure> -->
+				<!-- <figure class="flex h-[10vh] w-[15vw] items-center justify-center mx-auto my-auto"> -->
+					<img src="Logo_George-Mason-University-2024_0.png" alt="uhh-logo" class="h-[15vh]">
+				</figure>
+				<!-- </div> -->
+				
+				<figure class="flex h-[15vh] w-[25vw] items-center justify-center mx-auto my-auto">
+					<img src="up-uhh-logo-u-2010-u-png.png" alt="uhh-logo" class="h-[15vh]">
+				</figure>
+				<figure class="flex h-[15vh] w-[25vw] items-center justify-center mx-auto my-auto">
+					<img src="up-uhh-logo-u-2010-u-png.png" alt="tum-logo" class="h-[15vh]">
+				</figure>
+
+			</div>
 		</mybody>
-	</Layout>
-	<Notes>
-		These are some presenter notes that can help during the actual presentation.<br>
-		They are displayed on the presenter's screen if "presenter mode" has been entered.
-	</Notes></Slide>
+
+		<Notes>
+			I am Christian, and this is my Master Thesis: ChameleonMT :D
+		</Notes>
+	</Layout></Slide>
 
 	
-
-	<script>newChapter("Text");</script>
+	<script>newChapter("Introduction");</script>
+	<!-- <script>newSection("Motivation");</script> -->
 	<Slide><Layout>
-		<titlebar > Simple Text </titlebar>
+		<titlebar> Motivation </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
-				You can add text, and different media files such as<br> 
-				images, pdfs, videos to your presentation slides.<br>
-				The following slides showcase some of these applications<br> 
-				for easy reproduction.
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Problem");</script> -->
+	<Slide><Layout>
+		<titlebar> Problem </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Hypothesis");</script> -->
+	<Slide><Layout>
+		<titlebar> Hypothesis </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Research Questions");</script> -->
+	<Slide><Layout>
+		<titlebar> Research Questions </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	<script>newChapter("Theory");</script>
+	<!-- <script>newSection("Related Work");</script> -->
+	<Slide><Layout>
+		<titlebar> Related Work </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Synthetic Data");</script> -->
+	<Slide animate><Layout>
+		<titlebar> Synthetic Data </titlebar>
+		<mybody>
+			<div class="w-[95vw] h-[75vh] bg-gray-700"> <!-- Main Panel Bottom-->
+				<iframe src="pdf/ChameleonMT-Concept-Dual.pdf#page=1&zoom=200" frameBorder="0" scrolling="auto" height="100%" width="100%" title="Documentation"></iframe>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("State of the Art");</script> -->
+	<Slide><Layout>
+		<titlebar> State of the Art </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	<script>newChapter("Methodology");</script>
+	<!-- <script>newSection("Machine Translation");</script> -->
+	<Slide><Layout>
+		<titlebar> Machine Translation </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	<script>newChapter("Exploration");</script>
+	<!-- <script>newSection("Bilingual Lexicon Induction");</script> -->
+	<Slide><Layout>
+		<titlebar> MUSE </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
 			</div>
 		</mybody>
 	</Layout></Slide>
 
 	<Slide><Layout>
-		<titlebar > A List of Text Items </titlebar>
+		<titlebar> MUSE Issues </titlebar>
 		<mybody>
-			<ul class="a" >
-				<li>The First Text Item.</li>
-				<ul class="b"> 
-					<li>The 1. Sub-Item.</li>
-				</ul>
-				<br>
-				<li>The Second Text Item.</li>
-				<ul class="b"> 
-					<li>The 2. Sub-Item.</li>
-					<ul class="c"> 
-						<li>Sub-Sub-Item a.</li>
-						<li>Sub-Sub-Item b.</li>
-					</ul>
-					<li>The 3. Sub-Item.</li>
-				</ul>
-				<br>
-				<li>The Third Text Item.</li>
-				<ul class="b"> 
-					<li>The 4. Sub-Item.</li>
-				</ul>
-			</ul>
-		</mybody>
-	</Layout>
-	<Notes>
-		These are some presenter notes that can help during the actual presentation.<br>
-		They are displayed on the presenter's screen if "presenter mode" has been entered.
-	</Notes></Slide>
-
-	<script> newChapter("Images"); </script>
-	<Slide><Layout>
-		<titlebar > An Image with a Caption </titlebar>
-		<mybody>
-			<figure>
-				<img src="title-logo.svg" alt="tumlogo" class="mx-auto my-[2vh]">
-				<figcaption> This is an example figure with caption. </figcaption>
-			</figure>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar > Here is a grid of images </titlebar>
-		<mybody>			
-			<div class="grid mt-[10vh] mx-[10vh]" style="grid-template-columns: auto auto auto;">
-				<img src="title-logo.svg" alt="tumlogo" class="h-[40vh] px-[5vh]">
-				<img src="title-logo.svg" alt="tumlogo" class="h-[40vh] px-[5vh]">
-				<img src="title-logo.svg" alt="tumlogo" class="h-[40vh] px-[5vh]">
-				<img src="title-logo.svg" alt="tumlogo" class="h-[40vh] px-[5vh]">
-				<img src="title-logo.svg" alt="tumlogo" class="h-[40vh] px-[5vh]">
-				<img src="title-logo.svg" alt="tumlogo" class="h-[40vh] px-[5vh]">
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<script> newChapter("PDFs"); </script>
-	<Slide><Layout>
-		<titlebar > Another PDF File as part of the Slide Deck </titlebar>
-		<mybody>			
-			<div class="h-[75vh] w-[90vw] mx-auto my-auto">
-				<iframe src="media-sample.pdf#page=1&zoom=100" frameBorder="0" scrolling="auto" height="100%" width="100%" title="ESSV Publication"></iframe>
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<script> newChapter("Videos"); </script>
-	<Slide><Layout>
-		<titlebar > Single Animated gif File (no sound) </titlebar>
-		<mybody>
-			<figure>
-				<img src="https://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves" class="w-[75vw] h-[75vh] mx-auto my-auto p-2" />
-				<figcaption> Stock-Gif of a Slowpoke for testing gif-display.<br> </figcaption>
-			</figure>
-		</mybody>
-	</Layout></Slide>
-	
-	<Slide><Layout>
-		<titlebar > Single Video with multiple available Captions </titlebar>
-		<mybody>
-			<figure>
-				<video controls class="w-[50vw] h-[44vh] mx-auto my-auto p-2">
-					<source src="media-never_gonna_give_you_up-video_medium-43_51.mp4" type="video/mp4" />
-					<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt"/>
-					<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt"/>
-					<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt" default/>
-					<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt"/>
-				</video>
-				<figcaption> Play a video file from the repository.<br> </figcaption>
-			</figure>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar > Multiple Videos on the same Slide </titlebar>
-		<mybody>
-			<figure>
-				<video controls class="w-[50vw] h-[44vh] mx-auto my-auto p-2" loop>
-					<source src="media-never_gonna_give_you_up-video_medium-43_51.mp4" type="video/mp4" />
-					<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt"/>
-					<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt"/>
-					<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt" default/>
-					<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt"/>
-				</video>
-				<figcaption> Video that loops.<br>Default caption: Chinese. </figcaption>
-			</figure>
-
-			<figure>
-				<video controls class="w-[50vw] h-[44vh] mx-auto my-auto p-2">
-					<source src="media-never_gonna_give_you_up-video_medium-43_51.mp4" type="video/mp4" />
-					<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt" default/>
-					<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt"/>
-					<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt"/>
-					<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt"/>
-				</video>
-				<figcaption> Video without looping.<br>Default caption: English. </figcaption>
-			</figure>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar > Multiple Videos in a Grid </titlebar>
-		<mybody>
-			<div class="grid mx-auto my-auto" style="grid-template-columns: auto auto;">
+			<div class="grid mt-[10vh] mx-[10vh]" style="grid-template-columns: auto;">
+				<p>
+					I found an issue on github that described my problem and a possible solution, but alas...
+				</p>
+				
 				<figure>
-					<video controls class="w-[50vw] h-[40vh] mx-auto my-auto p-2" loop>
-						<source src="media-never_gonna_give_you_up-video_medium-00_06.mp4" type="video/mp4" />
-						<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt" default/>
-						<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt"/>
-						<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt"/>
-						<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt"/>
-					</video>
-					<figcaption class="text-[2vh]"> Video with default caption: English. </figcaption>
-				</figure>
-	
-				<figure>
-					<video controls class="w-[50vw] h-[40vh] mx-auto my-auto p-2" loop>
-						<source src="media-never_gonna_give_you_up-video_medium-06_12.mp4" type="video/mp4" />
-						<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt"/>
-						<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt" default/>
-						<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt"/>
-						<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt"/>
-					</video>
-					<figcaption class="text-[2vh]"> Video with default caption: German. </figcaption>
-				</figure>
-	
-				<figure>
-					<video controls class="w-[50vw] h-[40vh] mx-auto my-auto p-2" loop>
-						<source src="media-never_gonna_give_you_up-video_medium-12_18.mp4" type="video/mp4" />
-						<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt"/>
-						<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt"/>
-						<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt" default/>
-						<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt"/>
-					</video>
-					<figcaption class="text-[2vh]"> Video with default caption: Chinese. </figcaption>
-				</figure>
-	
-				<figure>
-					<video controls class="w-[50vw] h-[40vh] mx-auto my-auto p-2" loop>
-						<source src="media-never_gonna_give_you_up-video_medium-18_24.mp4" type="video/mp4" />
-						<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt"/>
-						<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt"/>
-						<track kind="captions" label="Chinese" srclang="zho" src="media-video-captions-zho.vtt"/>
-						<track kind="captions" label="Chinese Pinyin" srclang="zho" src="media-video-captions-zhopinyin.vtt" default/>
-					</video>
-					<figcaption class="text-[2vh]"> Video with default caption: Chinese Pinyin. </figcaption>
+					<img src="images/MUSE-github-issue-sina.png" alt="museissue" class="mx-auto my-[2vh]">
+					<figcaption> MUSE GitHub Issue #196: https://github.com/facebookresearch/MUSE/issues/196</figcaption>
 				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
-	<script> newChapter("To wrap it up"); </script>
+	
+
+	<!-- <script>newSection("Phase 2");</script> -->
 	<Slide><Layout>
-		<titlebar > Here is the title for this slide </titlebar>
-		<div class="flex h-full items-center justify-center gap-[100px]">
-			This template is still work on progress. 
-		</div>
+		<titlebar> Phase 2 </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
 	</Layout></Slide>
+
+	
+	<script>newChapter("Design");</script>
+	<!-- <script>newSection("Phase 1");</script> -->
+	<Slide><Layout>
+		<titlebar> Phase 1 </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Phase 2");</script> -->
+	<Slide><Layout>
+		<titlebar> Phase 2 </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	<script>newChapter("Development");</script>
+	<!-- <script>newSection("Phase 1");</script> -->
+	<Slide><Layout>
+		<titlebar> Phase 1 </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Phase 2");</script> -->
+	<Slide><Layout>
+		<titlebar> Phase 2 </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	<script>newChapter("Data");</script>
+	<!-- <script>newSection("Data Acquisition");</script> -->
+	<Slide><Layout>
+		<titlebar> Data Acquisition</titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Data Cleaning");</script> -->
+	<Slide><Layout>
+		<titlebar> Data Cleaning</titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Part 1");</script> -->
+	<Slide><Layout>
+		<titlebar> Part 3 </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Part 2");</script> -->
+	<Slide><Layout>
+		<titlebar> Part 4 </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	<script>newChapter("Experiments");</script>
+	<!-- <script>newSection("Experiment A");</script> -->
+	<Slide><Layout>
+		<titlebar> Experiment A </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Experiment B");</script> -->
+	<Slide><Layout>
+		<titlebar> Experiment B </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	<script>newChapter("Results");</script>
+	<!-- <script>newSection("Part 1");</script> -->
+	<Slide><Layout>
+		<titlebar> Part 1 </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Part 2");</script> -->
+	<Slide><Layout>
+		<titlebar> Part 2 </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	<script>newChapter("Discussion");</script>
+	<!-- <script>newSection("Part 1");</script> -->
+	<Slide><Layout>
+		<titlebar> Part 1 </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Part 2");</script> -->
+	<Slide><Layout>
+		<titlebar> Part 2 </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	<script>newChapter("Future Work");</script>
+	<!-- <script>newSection("Direction A");</script> -->
+	<Slide><Layout>
+		<titlebar> Direction A </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Direction B");</script> -->
+	<Slide><Layout>
+		<titlebar> Direction B</titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	<script>newChapter("Conclusion");</script>
+	<!-- <script>newSection("Regarding RQ-1");</script> -->
+	<Slide><Layout>
+		<titlebar> Regarding RQ-1 </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Regarding RQ-2");</script> -->
+	<Slide><Layout>
+		<titlebar> Regarding RQ-2 </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	<script>newChapter("Appendix");</script>
+	<!-- <script>newSection("Appendix A");</script> -->
+	<Slide><Layout>
+		<titlebar> Appendix A </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Appendix B");</script> -->
+	<Slide><Layout>
+		<titlebar> Appendix B </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!---
+	- Put Pizza-Statistics into Appendix
+	
+	-->
+
+
 
 
 	<!-- to mimic the latex template  -->
