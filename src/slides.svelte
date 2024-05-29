@@ -3,7 +3,17 @@
 	import Layout from './layout.svelte'
 </script>
 
-<!-- Typical Errors
+<!-- 
+	Project Information #######################################################
+
+	- MA-Thesis-Slides github repository: https://github.com/christianschuler8989/MA-Thesis-Slides
+	- MA-Thesis-Slides online: https://christianschuler8989.github.io/MA-Thesis-Slides/#/slide-1
+	- AwesomeAnranAnimotion: https://github.com/AnranW/AwesomeAnranAnimotion
+
+	
+	Typical Errors ############################################################
+
+	→ pnpm run dev		NOT "pnpm dev run" . . . .
 	
 	"Uncaught TypeError: slidesInChapter[0] is undefined" and layout elements missing.
 	→ This can happen if a chapter is defined but has no slides.
@@ -416,13 +426,182 @@
 	<script>newChapter("Experiments");</script>
 	<!-- <script>newSection("Experiment A");</script> -->
 	<Slide><Layout>
-		<titlebar> Experiment A </titlebar>
+		<titlebar> Bavarian-German: Preprocess Data</titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
+				Preprocessed text data (cleaned and tokenized):
+			</div>
+
+			<div class="grid" style="grid-template-columns: auto auto auto; mx-auto my-auto;">
+				<p>Er <strong>is</strong> seit 1 . Mai 2020 im Amt . </p>
+				<p> &nbsp; ||| &nbsp; </p>
+				<p>Er <strong>ist</strong> seit 1 . Mai 2020 im Amt . </p>
+
+				<p>I wünsch dir von Herzen die <strong>süaßte</strong> Ruah , . </p>
+				<p> &nbsp; ||| &nbsp; </p>
+				<p><mark>I wünsch</mark> dir von Herzen die <strong>sü<mark>a</mark>ßeste</strong> <mark>Ruah</mark> , . </p>
+
+				<p> die Engerl vom Himmel , die deckn di zua .</p>
+				<p> &nbsp; ||| &nbsp; </p>
+				<p> , die <mark>Engerl</mark> vom Himmel , die decken <mark>di zua</mark> . </p>
+
+				<p><strong>De Gmoa</strong> liegt im Valle Anzasca . </p>
+				<p> &nbsp; ||| &nbsp; </p>
+				<p><strong>Die Gemeinde</strong> liegt im Valle Anzasca . </p>
+
+				<p>Am 1. <strong>Jenna</strong> 1977 <strong>is</strong> Rosenbach <strong>dazua kema</strong> . </p>
+				<p> &nbsp; ||| &nbsp; </p>
+				<p>Am 1. <strong>Januar</strong> 1977 <strong>kam</strong> Rosenbach <strong>hinzu</strong> . </p>
+
+				<p><strong>Ea is mid ana Goidmedaj vabundn .</strong></p>
+				<p> &nbsp; ||| &nbsp; </p>
+				<p><strong>Er ist mit einer Goldmedaille verbunden . </strong></p>
+
+				<!-- <p> </p>
+				<p> &nbsp; ||| &nbsp; </p>
+				<p> </p> -->
 			</div>
 		</mybody>
 	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar> Bavarian-German: Learn Byte-Pair Encoding (BPE)</titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Using subwordNMT, a byte-pair encoding was learned:
+			</div>
+
+			<div class="grid" style="grid-template-columns: auto ; mx-auto my-auto;">
+				<p>c &nbsp; &nbsp; h </p>
+				<p>c &nbsp; &nbsp; h "eow"</p> <!-- "eow" stands for </w> which HTML does not like -->
+				<p>s &nbsp; &nbsp; ch</p>
+				<p>i &nbsp; &nbsp; sch</p>
+				<p>S &nbsp; &nbsp; ch</p>
+				<p>a &nbsp; &nbsp; ch"eow"</p>
+				<p>i &nbsp; &nbsp; ch</p>
+				<p>li &nbsp; &nbsp; ch</p>
+				<p>ich &nbsp; &nbsp; t</p>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar> Bavarian-German: Apply Byte-Pair Encoding (BPE)</titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Applying the byte-pair encoding on the text data:
+			</div>
+
+			<div class="grid" style="grid-template-columns: auto ; mx-auto my-auto;">
+				<p>I wünsch dir von Herzen die süaßte Ruah , die Engerl vom Himmel , die deckn di zua .</p>
+				<p>I wün@@ sch dir von Herzen die sü@@ aß@@ te Ru@@ ah , die En@@ gerl vom Himmel , die de@@ ckn di zua .</p>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar> Bavarian-German: Training</titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				Training a language model via Sockeye:
+			</div>
+
+			<div class="grid" style="grid-template-columns: auto ; mx-auto my-auto;">
+				<p>TODO: Visualize somehow?</p>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar> Bavarian-German: Translate Test Data</titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				<p>Using the trained model, the test data can be translated now.</p>
+				<p>Reversing the BPE gives us the sentences:</p>
+			</div>
+
+			<div class="grid" style="grid-template-columns: auto ; mx-auto my-auto;">
+				<p>Too good to be true?</p>
+				<p>Bavarian: Duachn Ort fiaht de Stootsstroß 2307 . </p>
+				<p>Translated: Durch den Ort führt die Staatsstraße 2307 . </p>
+				<p>German: Durch den Ort führt die Staatsstraße 2307 . </p>
+
+				<p>Close, but no cigar</p>
+				<p>Bavarian: Da franzesische Journalist Henri Alleg hod Folta und Hoft iwalebd . </p>
+				<p>Translated: Der französische Journalist Henri Alleg übernahm Folter und Hoft . </p>
+				<p>German: Der französische Journalist Henri Alleg überlebte Folter und Haft . </p>
+
+				<p>Perfect hallucination?</p>
+				<p>Bavarian: Bis 1978 hod Kleinhögl zua Gmoa Högl gheat . </p>
+				<p>Translated: Im Zuge der Gebietsreform in Bayern wurde Kleinhögl am 1 . Mai 1978 nach Ansbach eingemeindet .</p>
+				<p>German: Bis zu deren Auflösung 1978 gehörte Kleinhögl zur Gemeinde Högl . </p>
+				
+				<!-- <p>?</p>
+				<p>Bavarian: </p>
+				<p>Translated: </p>
+				<p>German: </p> -->
+				 
+			</div>
+		</mybody>
+	</Layout></Slide>
+	
+	<Slide><Layout>
+		<titlebar> Bavarian-German: Evaluation</titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				The test data is used to score the model's performance via SacreBLEU:
+			</div>
+
+			<div class="grid" style="grid-template-columns: auto ; mx-auto my-auto;">
+				<p>TODO: Visualize somehow?</p>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar> Bavarian-German: Evaluation - BLEU</titlebar>
+		<mybody>
+			<div class="grid" style="grid-template-columns: auto auto; mx-auto my-auto;">
+				<p>BLEU (Bilingual Evaluation Understudy): is an evaluation metric that matches n-grams for evaluation of translation with explicit ordering. Designed to be used for several reference translation, in practice it's used with only the single one. BLEU is infamously dependent on the tokenization technique, and scores achieved with different ones are incomparable.</p>
+				<img src="images/ChameleonMT-EVAL-SacreBLEU.png" alt="eval-bleu" class="h-[75vh] px-[5vh]">
+			</div>
+			<!-- <div class="flex h-full items-center justify-center gap-[100px]">
+				BLEU (Bilingual Evaluation Understudy): is an evaluation metric that matches n-grams for evaluation of translation with explicit ordering. Designed to be used for several reference translation, in practice it's used with only the single one. BLEU is infamously dependent on the tokenization technique, and scores achieved with different ones are incomparable.
+			</div> -->
+
+			
+		</mybody>
+	</Layout></Slide>
+	
+	<Slide><Layout>
+		<titlebar> Bavarian-German: Evaluation - chrF</titlebar>
+		<mybody>
+			<div class="grid" style="grid-template-columns: auto auto; mx-auto my-auto;">
+				<p>chrF (Character n-gram F-score): is a robust metric for evaluating translation quality, especially for languages with complex morphology. It’s less sensitive to tokenization issues and can provide a more nuanced view of translation quality by focusing on character-level matches. This makes it particularly useful for low-resourced languages or those with rich morphological variations.</p>
+				<img src="images/ChameleonMT-EVAL-chrF.png" alt="eval-chrf" class="h-[75vh] px-[5vh]">
+			</div>
+
+			<!-- <div class="flex h-full items-center justify-center gap-[100px]">
+				chrF (Character n-gram F-score): is a robust metric for evaluating translation quality, especially for languages with complex morphology. It’s less sensitive to tokenization issues and can provide a more nuanced view of translation quality by focusing on character-level matches. This makes it particularly useful for low-resourced languages or those with rich morphological variations.
+			</div>
+			<img src="images/ChameleonMT-EVAL-chrF.png" alt="eval-bleu" class="h-[40vh] px-[5vh]"> -->
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar> Bavarian-German: Evaluation - TER</titlebar>
+		<mybody>
+			<div class="grid" style="grid-template-columns: auto auto; mx-auto my-auto;">
+				<p>TER (Translation Error (sometimes Edit) Rate): is a useful metric for evaluating machine translation quality, and it can be effective even in low-resourced scenarios.</p>
+				<img src="images/ChameleonMT-EVAL-TER.png" alt="eval-ter" class="h-[75vh] w-[50vw] px-[5vh]">
+			</div>
+			<!-- <div class="flex h-full items-center justify-center gap-[100px]">
+				TER (Translation Error (sometimes Edit) Rate): is a useful metric for evaluating machine translation quality, and it can be effective even in low-resourced scenarios.
+			</div>
+			<img src="images/ChameleonMT-EVAL-TER.png" alt="eval-bleu" class="h-[40vh] px-[5vh]"> -->
+		</mybody>
+	</Layout></Slide>
+	
 
 	<!-- <script>newSection("Experiment B");</script> -->
 	<Slide><Layout>
