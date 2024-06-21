@@ -108,7 +108,7 @@
 	<!-- <script>newChapter("Greeting");</script> -->
 	<!-- <script>newSection("Title");</script> -->
 	<Slide animate><Layout>
-		<titlebar> Suspects </titlebar>
+		<titlebar> The Unusual Suspects </titlebar>
 		<mybody>
 			<!-- <div data-id="header" class="text-center w-full h-full text-[60px] place-content-center flex items-center rounded gap-4 p-4">
 				<p data-id="header-text" class="text-[60px]">ChameleonMT</p>
@@ -172,7 +172,7 @@
 				</figure>
 				<figure class="h-[60vh] w-[20vw] float-left mx-auto my-auto">
 					<a href="https://www.inf.uni-hamburg.de/en/inst/ab/lt/people/chris-biemann.html">
-						<img src="examiner_chris.jpg" alt="chris" class="h-[40vh]">
+						<img src="examiner_chris.jpg" alt="chris" class="h-[40vh] mx-auto" >
 					</a>
 					<figcaption class="text-[2.3vh]">
 						Head of the Language Technology group at Universität Hamburg. 
@@ -183,11 +183,11 @@
 				</figure>
 
 				<!-- Logos -->
-				<figure class="flex h-[15vh] w-[25vw] items-center justify-center mx-auto my-auto">
+				<figure class="flex h-[10vh] w-[25vw] items-center justify-center mx-auto my-auto">
 					<img src="up-uhh-logo-u-2010-u-png.png" alt="uhh-logo" class="h-[15vh]">
 				</figure>
 				<!-- <div class="grid" style="grid-template-columns: auto; mx-auto my-auto;"> -->
-				<figure class="flex h-[15vh] w-[25vw] items-center justify-center mx-auto my-auto">
+				<figure class="flex h-[10vh] w-[25vw] items-center justify-center mx-auto my-auto">
 					<img src="Logo_university-of-zurich-eth-zurich-biointerfaces-international-2018-zurich-lucerne-university-of-applied-sciences-and-arts-others.png" alt="uhh-logo" class="h-[7vh]">
 				<!-- </figure> -->
 				<!-- <figure class="flex h-[10vh] w-[15vw] items-center justify-center mx-auto my-auto"> -->
@@ -195,10 +195,10 @@
 				</figure>
 				<!-- </div> -->
 				
-				<figure class="flex h-[15vh] w-[25vw] items-center justify-center mx-auto my-auto">
+				<figure class="flex h-[10vh] w-[25vw] items-center justify-center mx-auto my-auto">
 					<img src="up-uhh-logo-u-2010-u-png.png" alt="uhh-logo" class="h-[15vh]">
 				</figure>
-				<figure class="flex h-[15vh] w-[25vw] items-center justify-center mx-auto my-auto">
+				<figure class="flex h-[10vh] w-[25vw] items-center justify-center mx-auto my-auto">
 					<img src="up-uhh-logo-u-2010-u-png.png" alt="tum-logo" class="h-[15vh]">
 				</figure>
 
@@ -213,11 +213,93 @@
 	
 	<script>newChapter("Introduction");</script>
 	<!-- <script>newSection("Motivation");</script> -->
-	<Slide><Layout>
+	<!-- <Slide><Layout>
 		<titlebar> Motivation </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
 				Placeholder
+			</div>
+		</mybody>
+	</Layout></Slide> -->
+
+
+	<Slide><Layout>
+		<titlebar > Motivation: Languages of the Internet </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<img class="h-[75vh] align-middle" src="LowResource-IL01.png" alt="weblanguages">
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Motivation: Languages of the Internet </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<img class="h-[75vh] align-middle" src="LowResource-IL02.png" alt="weblanguages">
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Motivation: Languages of the Internet </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<img class="h-[75vh] align-middle" src="LowResource-IL03.png" alt="weblanguages">
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Motivation: Languages of the Internet </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<img class="h-[75vh] align-middle" src="LowResource-IL04.png" alt="weblanguages">
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Motivation: Languages of the Internet </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<img class="h-[75vh] align-middle" src="LowResource-IL05.png" alt="weblanguages">
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Motivation: Languages of the Internet </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<img class="h-[75vh] align-middle" src="LowResource-IL06.png" alt="weblanguages">
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Motivation: Languages of the Internet </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<img class="h-[75vh] align-middle" src="LowResource-IL07.png" alt="weblanguages">
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Motivation: Languages of the Internet </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<img class="h-[75vh] align-middle" src="LowResource-IL08.png" alt="weblanguages">
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Motivation: Languages of the Internet </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<img class="h-[75vh] align-middle" src="LowResource-IL09.png" alt="weblanguages">
 			</div>
 		</mybody>
 	</Layout></Slide>
@@ -227,7 +309,30 @@
 		<titlebar> Problem </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="LowResource-ResourceHierarchy.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						TODO: Image Caption
+					</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar> Problem </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="LowResource-ResourceHierarchyZero.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						TODO: Image Caption
+					</figcaption>
+				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
@@ -254,22 +359,51 @@
 
 
 	<script>newChapter("Theory");</script>
+	<!-- <script>newSection("Synthetic Data");</script> -->
+	<Slide animate><Layout>
+		<titlebar> Initial Concept </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="ChameleonMT-Concept-InitialConcept.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						TODO: Image Caption
+					</figcaption>
+				</figure>
+			</div>
+			<!-- <div class="w-[95vw] h-[75vh] bg-gray-700">
+				<iframe src="pdf/ChameleonMT-Concept-Dual.pdf#page=1&zoom=200" frameBorder="0" scrolling="auto" height="100%" width="100%" title="Documentation"></iframe>
+			</div> -->
+		</mybody>
+	</Layout></Slide>
+
+	<Slide animate><Layout>
+		<titlebar> Synthetic Data </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="ChameleonMT-Concept-Dual.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						TODO: Image Caption
+					</figcaption>
+				</figure>
+			</div>
+			<!-- <div class="w-[95vw] h-[75vh] bg-gray-700">
+				<iframe src="pdf/ChameleonMT-Concept-Dual.pdf#page=1&zoom=200" frameBorder="0" scrolling="auto" height="100%" width="100%" title="Documentation"></iframe>
+			</div> -->
+		</mybody>
+	</Layout></Slide>
+
 	<!-- <script>newSection("Related Work");</script> -->
 	<Slide><Layout>
 		<titlebar> Related Work </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
 				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<!-- <script>newSection("Synthetic Data");</script> -->
-	<Slide animate><Layout>
-		<titlebar> Synthetic Data </titlebar>
-		<mybody>
-			<div class="w-[95vw] h-[75vh] bg-gray-700"> <!-- Main Panel Bottom-->
-				<iframe src="pdf/ChameleonMT-Concept-Dual.pdf#page=1&zoom=200" frameBorder="0" scrolling="auto" height="100%" width="100%" title="Documentation"></iframe>
 			</div>
 		</mybody>
 	</Layout></Slide>
@@ -287,19 +421,62 @@
 
 	<script>newChapter("Methodology");</script>
 	<!-- <script>newSection("Machine Translation");</script> -->
-	<Slide><Layout>
+	<Slide animate><Layout>
 		<titlebar> Machine Translation </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="ChameleonMT-Concept-MachineTranslation.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						TODO: Image Caption
+					</figcaption>
+				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
 
-	<script>newChapter("Exploration");</script>
-	<!-- <script>newSection("Bilingual Lexicon Induction");</script> -->
 	<Slide><Layout>
+		<titlebar> Bilingual Lexicon Induction </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="https://www.inf.uni-hamburg.de/en/inst/ab/lt/people/chris-biemann.html"> -->
+						<img src="ChameleonMT-BLI-BLI.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						Bilingual Lexicon Induction
+					</figcaption>
+				</figure>
+				
+				<!-- <embed src="/public/pdf/ChameleonMT-BLI-BLI.pdf" class="w-[75vw] h-[75vh]" type="application/pdf"> -->
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar> Bilingual Lexicon Induction </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="ChameleonMT-MT-ExperimentSetup.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						Experiment Setup
+					</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+	
+
+
+	<!-- <script>newChapter("Exploration");</script> -->
+	<!-- <script>newSection("Bilingual Lexicon Induction");</script> -->
+	<!-- <Slide><Layout>
 		<titlebar> MUSE </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
@@ -322,19 +499,17 @@
 				</figure>
 			</div>
 		</mybody>
-	</Layout></Slide>
-
-	
+	</Layout></Slide> -->
 
 	<!-- <script>newSection("Phase 2");</script> -->
-	<Slide><Layout>
+	<!-- <Slide><Layout>
 		<titlebar> Phase 2 </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
 				Placeholder
 			</div>
 		</mybody>
-	</Layout></Slide>
+	</Layout></Slide> -->
 
 	
 	<script>newChapter("Design");</script>
@@ -349,14 +524,14 @@
 	</Layout></Slide>
 
 	<!-- <script>newSection("Phase 2");</script> -->
-	<Slide><Layout>
+	<!-- <Slide><Layout>
 		<titlebar> Phase 2 </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
 				Placeholder
 			</div>
 		</mybody>
-	</Layout></Slide>
+	</Layout></Slide> -->
 
 
 	<script>newChapter("Development");</script>
@@ -371,14 +546,14 @@
 	</Layout></Slide>
 
 	<!-- <script>newSection("Phase 2");</script> -->
-	<Slide><Layout>
+	<!-- <Slide><Layout>
 		<titlebar> Phase 2 </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
 				Placeholder
 			</div>
 		</mybody>
-	</Layout></Slide>
+	</Layout></Slide> -->
 
 
 	<script>newChapter("Data");</script>
@@ -387,56 +562,147 @@
 		<titlebar> Data Acquisition</titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
+				TODO: Describe and refer to DialectBLI by Artemova and Plank
 			</div>
 		</mybody>
 	</Layout></Slide>
 
 	<!-- <script>newSection("Data Cleaning");</script> -->
-	<Slide><Layout>
+	<!-- <Slide><Layout>
 		<titlebar> Data Cleaning</titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
 				Placeholder
 			</div>
 		</mybody>
-	</Layout></Slide>
+	</Layout></Slide> -->
 
-	<!-- <script>newSection("Part 1");</script> -->
-	<Slide><Layout>
-		<titlebar> Part 3 </titlebar>
+	<Slide animate><Layout>
+        <titlebar> Data Cleaning: DialectBLI's German - Bavarian </titlebar>
+        <mybody>
+            <div class="flex h-full items-center justify-center gap-[100px]">
+                <figure class="h-[75vh] w-[90vw] float-left mx-auto my-auto" style="overflow:auto">
+                    <!-- <a href="https://www.inf.uni-hamburg.de/en/inst/ab/lt/people/chris-biemann.html"> -->
+                        <img src="ChameleonMT-SYNTH-SYNTH.png" alt="bli" style="display:inline">
+                    <!-- </a> -->
+                    <figcaption class="text-[2.3vh]">
+                        Utilizinh DialectBLI's data
+                    </figcaption>
+                </figure>
+                
+                <!-- <embed src="/public/pdf/ChameleonMT-BLI-BLI.pdf" class="w-[75vw] h-[75vh]" type="application/pdf"> -->
+            </div>
+        </mybody>
+    </Layout></Slide>
+
+	<Slide animate><Layout>
+		<titlebar> Data Cleaning: DialectBLI's German - Bavarian </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="ChameleonMT-DATA-DialectBLI01.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						TODO: Image Caption
+					</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide animate><Layout>
+		<titlebar> Data Cleaning: DialectBLI's German - Bavarian </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="ChameleonMT-DATA-DialectBLI02.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						TODO: Image Caption
+					</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <script>newSection("Wikidumps");</script> -->
+	<Slide animate><Layout>
+		<titlebar> Data Cleaning: Wikidumps - Bavarian </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="ChameleonMT-DATA-WikidumpsOverview.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						TODO: Image Caption
+					</figcaption>
+				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
 	<!-- <script>newSection("Part 2");</script> -->
-	<Slide><Layout>
+	<!-- <Slide><Layout>
 		<titlebar> Part 4 </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
 				Placeholder
 			</div>
 		</mybody>
-	</Layout></Slide>
+	</Layout></Slide> -->
 
 
 	<script>newChapter("Experiments");</script>
 	<!-- <script>newSection("Experiment A");</script> -->
 	<Slide><Layout>
-		<titlebar> Bavarian-German: Preprocess Data</titlebar>
+		<titlebar> Bavarian-German: Cleaning and Tokenizing Data</titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
+			<!-- <div class="flex h-full items-center justify-center gap-[100px]">
 				Preprocessed text data (cleaned and tokenized):
-			</div>
+			</div> -->
 
-			<div class="grid" style="grid-template-columns: auto auto auto; mx-auto my-auto;">
+			<div class="grid" style="grid-template-columns: auto; mx-auto my-auto;">
 				<p>Er <strong>is</strong> seit 1 . Mai 2020 im Amt . </p>
-				<p> &nbsp; ||| &nbsp; </p>
+				
 				<p>Er <strong>ist</strong> seit 1 . Mai 2020 im Amt . </p>
 
+				<p> ---------------------------- </p>
+
+				<p>I wünsch dir von Herzen die <strong>süaßte</strong> Ruah , . </p>
+				
+				<p><mark>I wünsch</mark> dir von Herzen die <strong>sü<mark>a</mark>ßeste</strong> <mark>Ruah</mark> , . </p>
+
+				<p> ---------------------------- </p>
+
+				<p> die Engerl vom Himmel , die deckn di zua .</p>
+				
+				<p> , die <mark>Engerl</mark> vom Himmel , die decken <mark>di zua</mark> . </p>
+
+				<p> ---------------------------- </p>
+
+				<p><strong>De Gmoa</strong> liegt im Valle Anzasca . </p>
+				
+				<p><strong>Die Gemeinde</strong> liegt im Valle Anzasca . </p>
+
+				<p> ---------------------------- </p>
+
+				<p>Am 1. <strong>Jenna</strong> 1977 <strong>is</strong> Rosenbach <strong>dazua kema</strong> . </p>
+				
+				<p>Am 1. <strong>Januar</strong> 1977 <strong>kam</strong> Rosenbach <strong>hinzu</strong> . </p>
+
+				<p> ---------------------------- </p>
+
+				<p><strong>Ea is mid ana Goidmedaj vabundn .</strong></p>
+				
+				<p><strong>Er ist mit einer Goldmedaille verbunden . </strong></p>
+			
+				<!-- <p>Er <strong>is</strong> seit 1 . Mai 2020 im Amt . </p>
+				<p> &nbsp; ||| &nbsp; </p>
+				<p>Er <strong>ist</strong> seit 1 . Mai 2020 im Amt . </p>
+				
 				<p>I wünsch dir von Herzen die <strong>süaßte</strong> Ruah , . </p>
 				<p> &nbsp; ||| &nbsp; </p>
 				<p><mark>I wünsch</mark> dir von Herzen die <strong>sü<mark>a</mark>ßeste</strong> <mark>Ruah</mark> , . </p>
@@ -455,7 +721,7 @@
 
 				<p><strong>Ea is mid ana Goidmedaj vabundn .</strong></p>
 				<p> &nbsp; ||| &nbsp; </p>
-				<p><strong>Er ist mit einer Goldmedaille verbunden . </strong></p>
+				<p><strong>Er ist mit einer Goldmedaille verbunden . </strong></p> -->
 
 				<!-- <p> </p>
 				<p> &nbsp; ||| &nbsp; </p>
@@ -467,9 +733,7 @@
 	<Slide><Layout>
 		<titlebar> Bavarian-German: Learn Byte-Pair Encoding (BPE)</titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Using subwordNMT, a byte-pair encoding was learned:
-			</div>
+			<!-- <p>Using subwordNMT, a byte-pair encoding was learned:</p> -->
 
 			<div class="grid" style="grid-template-columns: auto ; mx-auto my-auto;">
 				<p>c &nbsp; &nbsp; h </p>
@@ -515,10 +779,10 @@
 	<Slide><Layout>
 		<titlebar> Bavarian-German: Translate Test Data</titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
+			<!-- <div class="flex h-full items-center justify-center gap-[100px]">
 				<p>Using the trained model, the test data can be translated now.</p>
 				<p>Reversing the BPE gives us the sentences:</p>
-			</div>
+			</div> -->
 
 			<div class="grid" style="grid-template-columns: auto ; mx-auto my-auto;">
 				<p>Too good to be true?</p>
@@ -526,10 +790,14 @@
 				<p>Translated: Durch den Ort führt die Staatsstraße 2307 . </p>
 				<p>German: Durch den Ort führt die Staatsstraße 2307 . </p>
 
+				<p> ---------------------------- </p>
+
 				<p>Close, but no cigar</p>
 				<p>Bavarian: Da franzesische Journalist Henri Alleg hod Folta und Hoft iwalebd . </p>
 				<p>Translated: Der französische Journalist Henri Alleg übernahm Folter und Hoft . </p>
 				<p>German: Der französische Journalist Henri Alleg überlebte Folter und Haft . </p>
+
+				<p> ---------------------------- </p>
 
 				<p>Perfect hallucination?</p>
 				<p>Bavarian: Bis 1978 hod Kleinhögl zua Gmoa Högl gheat . </p>
@@ -545,7 +813,7 @@
 		</mybody>
 	</Layout></Slide>
 	
-	<Slide><Layout>
+	<!-- <Slide><Layout>
 		<titlebar> Bavarian-German: Evaluation</titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
@@ -556,63 +824,84 @@
 				<p>TODO: Visualize somehow?</p>
 			</div>
 		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar> Bavarian-German: Evaluation - BLEU</titlebar>
-		<mybody>
-			<div class="grid" style="grid-template-columns: auto auto; mx-auto my-auto;">
-				<p>BLEU (Bilingual Evaluation Understudy): is an evaluation metric that matches n-grams for evaluation of translation with explicit ordering. Designed to be used for several reference translation, in practice it's used with only the single one. BLEU is infamously dependent on the tokenization technique, and scores achieved with different ones are incomparable.</p>
-				<img src="images/ChameleonMT-EVAL-SacreBLEU.png" alt="eval-bleu" class="h-[75vh] px-[5vh]">
-			</div>
-			<!-- <div class="flex h-full items-center justify-center gap-[100px]">
-				BLEU (Bilingual Evaluation Understudy): is an evaluation metric that matches n-grams for evaluation of translation with explicit ordering. Designed to be used for several reference translation, in practice it's used with only the single one. BLEU is infamously dependent on the tokenization technique, and scores achieved with different ones are incomparable.
-			</div> -->
-
-			
-		</mybody>
-	</Layout></Slide>
-	
-	<Slide><Layout>
-		<titlebar> Bavarian-German: Evaluation - chrF</titlebar>
-		<mybody>
-			<div class="grid" style="grid-template-columns: auto auto; mx-auto my-auto;">
-				<p>chrF (Character n-gram F-score): is a robust metric for evaluating translation quality, especially for languages with complex morphology. It’s less sensitive to tokenization issues and can provide a more nuanced view of translation quality by focusing on character-level matches. This makes it particularly useful for low-resourced languages or those with rich morphological variations.</p>
-				<img src="images/ChameleonMT-EVAL-chrF.png" alt="eval-chrf" class="h-[75vh] px-[5vh]">
-			</div>
-
-			<!-- <div class="flex h-full items-center justify-center gap-[100px]">
-				chrF (Character n-gram F-score): is a robust metric for evaluating translation quality, especially for languages with complex morphology. It’s less sensitive to tokenization issues and can provide a more nuanced view of translation quality by focusing on character-level matches. This makes it particularly useful for low-resourced languages or those with rich morphological variations.
-			</div>
-			<img src="images/ChameleonMT-EVAL-chrF.png" alt="eval-bleu" class="h-[40vh] px-[5vh]"> -->
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar> Bavarian-German: Evaluation - TER</titlebar>
-		<mybody>
-			<div class="grid" style="grid-template-columns: auto auto; mx-auto my-auto;">
-				<p>TER (Translation Error (sometimes Edit) Rate): is a useful metric for evaluating machine translation quality, and it can be effective even in low-resourced scenarios.</p>
-				<img src="images/ChameleonMT-EVAL-TER.png" alt="eval-ter" class="h-[75vh] w-[50vw] px-[5vh]">
-			</div>
-			<!-- <div class="flex h-full items-center justify-center gap-[100px]">
-				TER (Translation Error (sometimes Edit) Rate): is a useful metric for evaluating machine translation quality, and it can be effective even in low-resourced scenarios.
-			</div>
-			<img src="images/ChameleonMT-EVAL-TER.png" alt="eval-bleu" class="h-[40vh] px-[5vh]"> -->
-		</mybody>
-	</Layout></Slide>
+	</Layout></Slide> -->
 	
 
 	<!-- <script>newSection("Experiment B");</script> -->
-	<Slide><Layout>
+	<!-- <Slide><Layout>
 		<titlebar> Experiment B </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
 				Placeholder
 			</div>
 		</mybody>
+	</Layout></Slide> -->
+
+	<script>newChapter("Evaluation");</script>
+	<!-- <script>newSection("Evaluation");</script> -->
+	<Slide animate><Layout>
+		<titlebar> Evaluation of Machine Translation </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="ChameleonMT-EVAL-Overview.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						BLEU (Bilingual Evaluation Understudy): is an evaluation metric that matches n-grams for evaluation of translation with explicit ordering. Designed to be used for several reference translation, in practice it's used with only the single one. BLEU is infamously dependent on the tokenization technique, and scores achieved with different ones are incomparable.
+					</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+	
+	<Slide animate><Layout>
+		<titlebar> Evaluation via BLEU </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="ChameleonMT-EVAL-SacreBLEU.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						BLEU (Bilingual Evaluation Understudy): is an evaluation metric that matches n-grams for evaluation of translation with explicit ordering. Designed to be used for several reference translation, in practice it's used with only the single one. BLEU is infamously dependent on the tokenization technique, and scores achieved with different ones are incomparable.
+					</figcaption>
+				</figure>
+			</div>
+		</mybody>
 	</Layout></Slide>
 
+	<Slide animate><Layout>
+		<titlebar> Evaluation via TER </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="ChameleonMT-EVAL-TER.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						TER (Translation Error (sometimes Edit) Rate): is a useful metric for evaluating machine translation quality, and it can be effective even in low-resourced scenarios.
+					</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide animate><Layout>
+		<titlebar> Evaluation via chrF </titlebar>
+		<mybody>
+			<div class="flex h-full items-center justify-center gap-[100px]">
+				<figure class="mx-auto my-auto h-[90%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="ChameleonMT-EVAL-chrF.png" alt="bli" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[2.3vh]">
+						chrF (Character n-gram F-score): is a robust metric for evaluating translation quality, especially for languages with complex morphology. It’s less sensitive to tokenization issues and can provide a more nuanced view of translation quality by focusing on character-level matches. This makes it particularly useful for low-resourced languages or those with rich morphological variations.
+					</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
 
 	<script>newChapter("Results");</script>
 	<!-- <script>newSection("Part 1");</script> -->
@@ -620,20 +909,24 @@
 		<titlebar> Part 1 </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
+				<div class="w-[95vw] h-[75vh] bg-gray-700">
+					<iframe src="pdf/2024_MA_Thesis_Christian_Schuler.pdf#page=7&zoom=180" frameBorder="0" scrolling="auto" height="100%" width="100%" title="Documentation"></iframe>
+				</div>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
 	<!-- <script>newSection("Part 2");</script> -->
-	<Slide><Layout>
+	<!-- <Slide><Layout>
 		<titlebar> Part 2 </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
 				Placeholder
 			</div>
 		</mybody>
-	</Layout></Slide>
+	</Layout></Slide> -->
+
+	
 
 
 	<script>newChapter("Discussion");</script>
@@ -648,14 +941,14 @@
 	</Layout></Slide>
 
 	<!-- <script>newSection("Part 2");</script> -->
-	<Slide><Layout>
+	<!-- <Slide><Layout>
 		<titlebar> Part 2 </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
 				Placeholder
 			</div>
 		</mybody>
-	</Layout></Slide>
+	</Layout></Slide> -->
 
 
 	<script>newChapter("Future Work");</script>
@@ -670,14 +963,14 @@
 	</Layout></Slide>
 
 	<!-- <script>newSection("Direction B");</script> -->
-	<Slide><Layout>
+	<!-- <Slide><Layout>
 		<titlebar> Direction B</titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
 				Placeholder
 			</div>
 		</mybody>
-	</Layout></Slide>
+	</Layout></Slide> -->
 
 
 	<script>newChapter("Conclusion");</script>
@@ -714,14 +1007,14 @@
 	</Layout></Slide>
 
 	<!-- <script>newSection("Appendix B");</script> -->
-	<Slide><Layout>
+	<!-- <Slide><Layout>
 		<titlebar> Appendix B </titlebar>
 		<mybody>
 			<div class="flex h-full items-center justify-center gap-[100px]">
 				Placeholder
 			</div>
 		</mybody>
-	</Layout></Slide>
+	</Layout></Slide> -->
 
 	<!---
 	- Put Pizza-Statistics into Appendix
