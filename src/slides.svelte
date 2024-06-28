@@ -25,7 +25,8 @@
 		// information about this presentation 
 		const author = "Christian Schuler"; 
 		const authorshort = "Schuler"; 
-		const title = "Neural Machine Translation for Low-Resource Language Variations on Synthetic Data by Incorporating Linguistic Information";
+		const title = "Leveraging Morphological and Lexical Features in Synthetic Data Generation <br> for Dialect-Specific Machine Translation"
+		// "Neural Machine Translation for Low-Resource Language Variations on Synthetic Data by Incorporating Linguistic Information";
 		const subtitle = "Master's Thesis";
 		const department = "Department of Informatics"; 
 		const university = "University of Hamburg"; 
