@@ -121,7 +121,7 @@
 			<!-- <div data-id="header-bot" class="text-center h-full w-full place-content-center flex items-center rounded gap-4 pg-2 p-4 bg-gray-600">
 				<FitText>Neural Machine Translation for Low-Resource Language Variations <br> on Synthetic Data by Incorporating Linguistic Information</FitText>
 			</div> -->
-			<div class="grid" style="grid-template-columns: auto auto auto auto; mx-auto my-auto;">
+			<div class="grid mx-auto my-auto" style="grid-template-columns: auto auto auto auto;">
 				
 				<!-- Names -->
 				<div class="flex w-[25vw] items-center justify-center gap-[10px]">
@@ -278,7 +278,7 @@
 	<Slide><Layout>
 		<titlebar > Exploring Dialect Machine Translation </titlebar>
 		<mybody>
-			<div class="grid" style="grid-template-columns: auto auto auto; mx-auto my-auto;">
+			<div class="grid mx-auto my-auto" style="grid-template-columns: auto auto auto;">
 				<!-- <figure class="mx-auto my-auto h-[85%] w-[85%]" >
 					<img src="exploratory-2023_11_28-benglai.png" alt="exploringDialectMT">
 				</figure> -->
@@ -738,8 +738,141 @@
 		</mybody>
 	</Layout></Slide>
 
+<!-- 
+ # Last Big TODOs
+
+(6/29) Exploring Dialect Machine Translation
+
+These exploratory experiments utilized the translation systems Google Translate (https://translate.google.com/) via the translate-shell (https://github.com/soimort/translate-shell) and NLLB (Team et al., 2022), various data sets (primarily CODET (Alam, Ahmadi, and Anastasopoulos, 2023)), and the implementation of BLEU from Fairseq (https://github.com/facebookresearch/fairseq). 
 
 
+
+(12/29) Linguistic Features
+
+Examples from Multi-VALUE and co.
+
+
++ New Slide ? Struggles with MUSE ?
+
+
+
+(14/29) Synthetic Data
+
+Examples from my work
+
+
+
+(15/29) Evaluation Metrics
+
+Issues with BLEU
+
+
+
+(16/29) Data Cleaning 
+
+Highlight ~2 (important) examples to talk about.
+
+
+
+(17/29) What I got out of it [Results]
+
+Tables from Overleaf and some sentences?
+
+
+
+(18/29) Origin of the Noise - Bavarian Dialect Families
+
+Highlight the "Mittelbairisch" for next slide transition
+
+
+
+(19/29) Origin of the Noise - Bavarian Varieties
+
+Highlight a few words to talk about and show differences.
+
+Rework caption and maybe move it next to table? Highlight the english part?
+
+
+
+(21/29) Origin of the Noise - Alpine Region
+
+Highlight or otherwise make crytal clear, that we have to cross (multiple) country borders now.
+
+
++ New Slide ? Mapping of Bavarian variants between works and datasets (From Obsidian) ?
+
+
+
+(23/29) Sorting Wikipedia Articles - Alemannic Example
+
+→ Title: Falling Down (the Rabbit Hole)
+
+
+
+(24/29) Sorting Wikipedia Articles - Alemannic Example
+
+Crop out "Alagnadeutsch" and "Issimedeutsch"
+→ Title: "12 Angry Subdialects"
+
+
+
+(25/29) Sorting Wikipedia Articles - Alemannic Example
+
+
+→ Title: Good Word Hunting
+
+
+
++ New Slide ? (Lambrecht et al., 2022): "Splitting into Alemannic variants shows great improvements"
+Also talk about how they just dropped the effing ball...
+→ Title: The Day The Wikidump Was Still Cleaned
+
+
+(26/29) Sorting Wikipedia Articles - Current State
+
+→ Title: A Fistful Of Dialects
+
+
+
+(27/29) NLLB-Tuning
+
+→ Title: Two Hundred And One Languages
+
+
+
+
+
+
+
+
+
+→ Slide Title Easter Eggs
+The Unusual Suspects → The Usual Suspects (1995)
+12 Angry Subdialects → 12 Angry Men (1957)
+Falling Down (the Rabbit Hole) → Falling Down (1993)
+Two Hundred And One Languages → One Hundred And One Dalmatians (1961)
+Good Word Hunting → Good Will Hunting (1997)
+A Fistful Of Dialects → A Fistful Of Dollars (1964)
+The Day The Wikidump Was Still Cleaned → The Day The Earth Stood Still (1951)
+
+The Good, The Bad And The Others → The Good, The Bad And The Ugly (1967)
+Low-Res is Beautiful → Life is Beautiful (1997)
+
+
+ -->
+
+
+
+	<script>newChapter("Appendix");</script>
+
+	<Slide><Layout>
+		<titlebar > References </titlebar>
+		<mybody class="mt-[-2%]">
+			<div class="h-[75%] w-[90%] mx-auto my-auto">
+				<iframe src="media-sample.pdf#page=1&zoom=100" frameBorder="0" scrolling="auto" height="100%" width="100%" title="ESSV Publication"></iframe>
+			</div>
+		</mybody>
+	</Layout></Slide>
 
 
 	<!-- to mimic the latex template  -->
