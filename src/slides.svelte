@@ -25,8 +25,9 @@
 		// information about this presentation 
 		const author = "Christian Schuler"; 
 		const authorshort = "Schuler"; 
-		const title = "Leveraging Morphological and Lexical Features in Synthetic Data Generation <br> for Dialect-Specific Machine Translation"
-		// "Neural Machine Translation for Low-Resource Language Variations on Synthetic Data by Incorporating Linguistic Information";
+		const title = "Neural Machine Translation for Low-Resource Language Variations on Synthetic Data by Incorporating Linguistic Information";
+		//             Neural Machine Translation for Low-Resource Language Variations on Synthetic Data by Incorporating Linguistic Information
+		//             Leveraging Morphological and Lexical Features in Synthetic Data Generation for Dialect-Specific Machine Translation
 		const subtitle = "Master's Thesis";
 		const department = "Department of Informatics"; 
 		const university = "University of Hamburg"; 
@@ -154,7 +155,7 @@
 						<img src="supervisor_sina.png" alt="sina" class="h-[40vh]">
 					</a>
 					<figcaption class="text-[2.3vh]">
-						Postdoctoral researcher affiliated with Prof. Rico Sennrich’s group at the Department of Computational Linguistics at University of Zurich. 
+						Postdoctoral researcher affiliated with Prof. Rico Sennrich’s group at the Department of Computational Linguistics at University of Zurich.
 					</figcaption>
 					<figcaption class="text-[1.3vh]">
 						Sina always made sure to bring me back on track when I got too interested in side projects and literature!
@@ -183,26 +184,6 @@
 					</figcaption>
 				</figure>
 
-				<!-- Logos -->
-				<figure class="flex h-[10vh] w-[25vw] items-center justify-center mx-auto my-auto">
-					<img src="up-uhh-logo-u-2010-u-png.png" alt="uhh-logo" class="h-[15vh]">
-				</figure>
-				<!-- <div class="grid" style="grid-template-columns: auto; mx-auto my-auto;"> -->
-				<figure class="flex h-[10vh] w-[25vw] items-center justify-center mx-auto my-auto">
-					<img src="Logo_university-of-zurich-eth-zurich-biointerfaces-international-2018-zurich-lucerne-university-of-applied-sciences-and-arts-others.png" alt="uhh-logo" class="h-[7vh]">
-				<!-- </figure> -->
-				<!-- <figure class="flex h-[10vh] w-[15vw] items-center justify-center mx-auto my-auto"> -->
-					<img src="Logo_George-Mason-University-2024_0.png" alt="uhh-logo" class="h-[15vh]">
-				</figure>
-				<!-- </div> -->
-				
-				<figure class="flex h-[10vh] w-[25vw] items-center justify-center mx-auto my-auto">
-					<img src="up-uhh-logo-u-2010-u-png.png" alt="uhh-logo" class="h-[15vh]">
-				</figure>
-				<figure class="flex h-[10vh] w-[25vw] items-center justify-center mx-auto my-auto">
-					<img src="up-uhh-logo-u-2010-u-png.png" alt="tum-logo" class="h-[15vh]">
-				</figure>
-
 			</div>
 		</mybody>
 
@@ -223,681 +204,302 @@
 		</mybody>
 	</Layout></Slide> -->
 
-
-	<Slide><Layout>
-		<titlebar > Motivation: Languages of the Internet </titlebar>
-		<mybody>
-			<div class="flex items-center justify-center">
-				<img class="h-[75vh] align-middle" src="LowResource-IL01.png" alt="weblanguages">
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar > Motivation: Languages of the Internet </titlebar>
-		<mybody>
-			<div class="flex items-center justify-center">
-				<img class="h-[75vh] align-middle" src="LowResource-IL02.png" alt="weblanguages">
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar > Motivation: Languages of the Internet </titlebar>
-		<mybody>
-			<div class="flex items-center justify-center">
-				<img class="h-[75vh] align-middle" src="LowResource-IL03.png" alt="weblanguages">
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar > Motivation: Languages of the Internet </titlebar>
-		<mybody>
-			<div class="flex items-center justify-center">
-				<img class="h-[75vh] align-middle" src="LowResource-IL04.png" alt="weblanguages">
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar > Motivation: Languages of the Internet </titlebar>
-		<mybody>
-			<div class="flex items-center justify-center">
-				<img class="h-[75vh] align-middle" src="LowResource-IL05.png" alt="weblanguages">
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar > Motivation: Languages of the Internet </titlebar>
-		<mybody>
-			<div class="flex items-center justify-center">
-				<img class="h-[75vh] align-middle" src="LowResource-IL06.png" alt="weblanguages">
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar > Motivation: Languages of the Internet </titlebar>
-		<mybody>
-			<div class="flex items-center justify-center">
-				<img class="h-[75vh] align-middle" src="LowResource-IL07.png" alt="weblanguages">
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar > Motivation: Languages of the Internet </titlebar>
+	<!-- <Slide><Layout>
+		<titlebar > Distribution of Languages on the Internet </titlebar>
 		<mybody>
 			<div class="flex items-center justify-center">
 				<img class="h-[75vh] align-middle" src="LowResource-IL08.png" alt="weblanguages">
 			</div>
 		</mybody>
-	</Layout></Slide>
+	</Layout></Slide> -->
 
+	<!-- Not English = Low-Resource? -->
 	<Slide><Layout>
-		<titlebar > Motivation: Languages of the Internet </titlebar>
+		<titlebar > Distribution of Languages on the Internet </titlebar> 
 		<mybody>
-			<div class="flex items-center justify-center">
-				<img class="h-[75vh] align-middle" src="LowResource-IL09.png" alt="weblanguages">
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<!-- <script>newSection("Problem");</script> -->
-	<Slide><Layout>
-		<titlebar> Problem </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
+			<div class="flex items-center justify-center w-[50%] h-[100%]">
+				<figure class="mx-auto my-auto" >
 					<!-- <a href="URL_HERE"> -->
-						<img src="LowResource-ResourceHierarchy.png" alt="bli" style="max-height:100%;">
+						<img class="align-middle" src="LowResource-IL09.png" alt="weblanguages">
 					<!-- </a> -->
 					<figcaption class="text-[2.3vh]">
-						TODO: Image Caption
+						Distribution of Languages on the Internet.
+					<div class="text-[2.1vh]">
+						<br> (Source: https://en.wikipedia.org/wiki/Languages_used_on_the_Internet)
+					</div>
 					</figcaption>
 				</figure>
 			</div>
-		</mybody>
-	</Layout></Slide>
 
-	<Slide><Layout>
-		<titlebar> Problem </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
+			<div class="flex items-center justify-center w-[50%] h-[100%]">
+				<figure class="mx-auto my-auto" >
 					<!-- <a href="URL_HERE"> -->
 						<img src="LowResource-ResourceHierarchyZero.png" alt="bli" style="max-height:100%;">
 					<!-- </a> -->
-					<figcaption class="text-[2.3vh]">
-						TODO: Image Caption
+					<figcaption class="text-[3.3vh]">
+						Low-Resource Language Processing.
+					<div class="text-[2.1vh]">
+						<br> (Modified from https://www.ruder.io/unsupervised-cross-lingual-learning/)
+					</div>
 					</figcaption>
 				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
-	<!-- <script>newSection("Hypothesis");</script> -->
 	<Slide><Layout>
-		<titlebar> Hypothesis </titlebar>
+		<titlebar > Guiding Questions </titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
+			<div class="flex items-center justify-center">
+				<ul class="a" >
+					<li>(1.) What is the performance of the current state-of-the-art models in translating dialects?</li>
+					<br>
+					<li>(2.) Can we incorporate linguistic information in MT to synthetically generate sentences in language variants so that dialects of various (and especially low-resource) languages can be processed more efficiently?</li>
+					<br>
+					<li>(3.) When using synthetic data, what roles do state-of-the-art approaches in fine-tuning, transfer learning and adapters play in improving the performance of MT systems to process (particularly low-resource) language variations effectively?</li>
+					<br>
+					<li>(4.) What are requirements for deriving tools and processes that can be applied to vastly different languages from various language families?</li>
+				</ul>
 			</div>
 		</mybody>
 	</Layout></Slide>
-
-	<!-- <script>newSection("Research Questions");</script> -->
+	
 	<Slide><Layout>
-		<titlebar> Research Questions </titlebar>
+		<titlebar > Exploring Dialect Machine Translation </titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-
-	<script>newChapter("Theory");</script>
-	<!-- <script>newSection("Synthetic Data");</script> -->
-	<Slide animate><Layout>
-		<titlebar> Initial Concept </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
-					<!-- <a href="URL_HERE"> -->
-						<img src="ChameleonMT-Concept-InitialConcept.png" alt="bli" style="max-height:100%;">
-					<!-- </a> -->
-					<figcaption class="text-[2.3vh]">
-						TODO: Image Caption
-					</figcaption>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto" >
+					<img src="exploratory-2023_11_28-benglai.png" alt="exploringDialectMT">
 				</figure>
 			</div>
-			<!-- <div class="w-[95vw] h-[75vh] bg-gray-700">
-				<iframe src="pdf/ChameleonMT-Concept-Dual.pdf#page=1&zoom=200" frameBorder="0" scrolling="auto" height="100%" width="100%" title="Documentation"></iframe>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Exploring Dialect Machine Translation </titlebar>
+		<mybody>
+			<div class="grid" style="grid-template-columns: auto auto auto; mx-auto my-auto;">
+				<!-- <figure class="mx-auto my-auto h-[85%] w-[85%]" >
+					<img src="exploratory-2023_11_28-benglai.png" alt="exploringDialectMT">
+				</figure> -->
+				TODO: dd sources for models and text data
+				<figure class="mx-auto my-auto h-[85%] w-[85%]" >
+					<img src="exploratory-2023_11_28-centralKurdish.png" alt="exploringDialectMT">
+				</figure>
+
+				<figure class="mx-auto my-auto h-[85%] w-[85%]" >
+					<img src="exploratory-2023_11_28-tigrinya.png" alt="exploringDialectMT">
+				</figure>
+
+				<figure class="mx-auto my-auto h-[85%] w-[85%]" >
+					<img src="exploratory-2023_11_28-german.png" alt="exploringDialectMT">
+				</figure>
+			</div>
+			<!-- <div class="flex items-center justify-center h-[90%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/german-dialects.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(Sima Brankov, 2013) Linguistic Map of Germany.
+					<div class="text-[1.1vh]">
+						<br> (Source: https://www.thegermanz.com/german-accents-dialects-german-germans-dont-understand/)
+					</div>
+				</figcaption>
+				</figure>
+			</div>
+
+			<div class="flex items-center justify-center h-[90%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/allemagne201.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(Sima Brankov, 2016) Linguistic Map of Germany.
+					<div class="text-[1.1vh]">
+						<br> (Source: https://sblanguagemaps.wordpress.com/2016/06/12/linguistic-map-of-germany/)
+					</div>
+				</figcaption>
+				</figure>
 			</div> -->
 		</mybody>
 	</Layout></Slide>
 
-	<Slide animate><Layout>
-		<titlebar> Synthetic Data </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
-					<!-- <a href="URL_HERE"> -->
-						<img src="ChameleonMT-Concept-Dual.png" alt="bli" style="max-height:100%;">
-					<!-- </a> -->
-					<figcaption class="text-[2.3vh]">
-						TODO: Image Caption
-					</figcaption>
-				</figure>
-			</div>
-			<!-- <div class="w-[95vw] h-[75vh] bg-gray-700">
-				<iframe src="pdf/ChameleonMT-Concept-Dual.pdf#page=1&zoom=200" frameBorder="0" scrolling="auto" height="100%" width="100%" title="Documentation"></iframe>
-			</div> -->
-		</mybody>
-	</Layout></Slide>
+	<script>newChapter("Language");</script>
 
-	<!-- <script>newSection("Related Work");</script> -->
 	<Slide><Layout>
-		<titlebar> Related Work </titlebar>
+		<titlebar > German </titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<!-- <script>newSection("State of the Art");</script> -->
-	<Slide><Layout>
-		<titlebar> State of the Art </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-
-	<script>newChapter("Methodology");</script>
-	<!-- <script>newSection("Machine Translation");</script> -->
-	<Slide animate><Layout>
-		<titlebar> Machine Translation </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
-					<!-- <a href="URL_HERE"> -->
-						<img src="ChameleonMT-Concept-MachineTranslation.png" alt="bli" style="max-height:100%;">
-					<!-- </a> -->
-					<figcaption class="text-[2.3vh]">
-						TODO: Image Caption
-					</figcaption>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<a href="https://github.com/facebookresearch/fairseq/tree/nllb">
+						<img src="ChameleonMT-MT-NLLB-German.png" alt="performanceOfMTSystems" style="max-height:100%; max-width:100%;">
+					</a>
+				<figcaption class="text-[1.8vh]">
+					(NLLB Team et al., 2022) open-sourced models capable of high-quality translations between 200+ languages. 
+					<br> Any following mention of NLLB refers to the 3.3B model.
+				</figcaption>
 				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
-
 	<Slide><Layout>
-		<titlebar> Bilingual Lexicon Induction </titlebar>
+		<titlebar > German == German ? </titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
-					<!-- <a href="https://www.inf.uni-hamburg.de/en/inst/ab/lt/people/chris-biemann.html"> -->
-						<img src="ChameleonMT-BLI-BLI.png" alt="bli" style="max-height:100%;">
-					<!-- </a> -->
-					<figcaption class="text-[2.3vh]">
-						Bilingual Lexicon Induction
-					</figcaption>
-				</figure>
-				
-				<!-- <embed src="/public/pdf/ChameleonMT-BLI-BLI.pdf" class="w-[75vw] h-[75vh]" type="application/pdf"> -->
-			</div>
+			<figure>
+				<video controls class="w-[80%] mx-auto my-auto p-2">
+					<source src="/video/german_dialects.mp4" type="video/mp4" />
+					<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt"/>
+					<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt" default/>
+				</video>
+				<figcaption class="text-[1.8vh]"> 
+					Peter Frankenfeld - Die Wetterkarte - Deutsche Dialekte 	
+				<div class="text-[1.1vh]">
+					<br> (Source: https://www.youtube.com/watch?v=btlGMBA2XO4)
+				</div>
+				</figcaption>
+			</figure>
 		</mybody>
 	</Layout></Slide>
 
 	<Slide><Layout>
-		<titlebar> Bilingual Lexicon Induction </titlebar>
+		<titlebar > German </titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
-					<!-- <a href="URL_HERE"> -->
-						<img src="ChameleonMT-MT-ExperimentSetup.png" alt="bli" style="max-height:100%;">
-					<!-- </a> -->
-					<figcaption class="text-[2.3vh]">
-						Experiment Setup
-					</figcaption>
+			<div class="flex items-center justify-center h-[90%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/german-dialects.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(Sima Brankov, 2013) Linguistic Map of Germany.
+					<div class="text-[1.1vh]">
+						<br> (Source: https://www.thegermanz.com/german-accents-dialects-german-germans-dont-understand/)
+					</div>
+				</figcaption>
+				</figure>
+			</div>
+
+			<div class="flex items-center justify-center h-[90%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/allemagne201.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(Sima Brankov, 2016) Linguistic Map of Germany.
+					<div class="text-[1.1vh]">
+						<br> (Source: https://sblanguagemaps.wordpress.com/2016/06/12/linguistic-map-of-germany/)
+					</div>
+				</figcaption>
 				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
-	
-
-
-	<!-- <script>newChapter("Exploration");</script> -->
-	<!-- <script>newSection("Bilingual Lexicon Induction");</script> -->
-	<!-- <Slide><Layout>
-		<titlebar> MUSE </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar> MUSE Issues </titlebar>
-		<mybody>
-			<div class="grid mt-[10vh] mx-[10vh]" style="grid-template-columns: auto;">
-				<p>
-					I found an issue on github that described my problem and a possible solution, but alas...
-				</p>
-				
-				<figure>
-					<img src="images/MUSE-github-issue-sina.png" alt="museissue" class="mx-auto my-[2vh]">
-					<figcaption> MUSE GitHub Issue #196: https://github.com/facebookresearch/MUSE/issues/196</figcaption>
-				</figure>
-			</div>
-		</mybody>
-	</Layout></Slide> -->
-
-	<!-- <script>newSection("Phase 2");</script> -->
-	<!-- <Slide><Layout>
-		<titlebar> Phase 2 </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide> -->
 
 	
-	<script>newChapter("Design");</script>
-	<!-- <script>newSection("Phase 1");</script> -->
 	<Slide><Layout>
-		<titlebar> Phase 1 </titlebar>
+		<titlebar > German as Dialect Continuum </titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<!-- <script>newSection("Phase 2");</script> -->
-	<!-- <Slide><Layout>
-		<titlebar> Phase 2 </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide> -->
-
-
-	<script>newChapter("Development");</script>
-	<!-- <script>newSection("Phase 1");</script> -->
-	<Slide><Layout>
-		<titlebar> Phase 1 </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<!-- <script>newSection("Phase 2");</script> -->
-	<!-- <Slide><Layout>
-		<titlebar> Phase 2 </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide> -->
-
-
-	<script>newChapter("Data");</script>
-	<!-- <script>newSection("Data Acquisition");</script> -->
-	<Slide><Layout>
-		<titlebar> Data Acquisition</titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				TODO: Describe and refer to DialectBLI by Artemova and Plank
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<!-- <script>newSection("Data Cleaning");</script> -->
-	<!-- <Slide><Layout>
-		<titlebar> Data Cleaning</titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide> -->
-
-	<Slide animate><Layout>
-        <titlebar> Data Cleaning: DialectBLI's German - Bavarian </titlebar>
-        <mybody>
-            <div class="flex h-full items-center justify-center gap-[100px]">
-                <figure class="h-[75vh] w-[90vw] float-left mx-auto my-auto" style="overflow:auto">
-                    <!-- <a href="https://www.inf.uni-hamburg.de/en/inst/ab/lt/people/chris-biemann.html"> -->
-                        <img src="ChameleonMT-SYNTH-SYNTH.png" alt="bli" style="display:inline">
-                    <!-- </a> -->
-                    <figcaption class="text-[2.3vh]">
-                        Utilizinh DialectBLI's data
-                    </figcaption>
-                </figure>
-                
-                <!-- <embed src="/public/pdf/ChameleonMT-BLI-BLI.pdf" class="w-[75vw] h-[75vh]" type="application/pdf"> -->
-            </div>
-        </mybody>
-    </Layout></Slide>
-
-	<Slide animate><Layout>
-		<titlebar> Data Cleaning: DialectBLI's German - Bavarian </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
-					<!-- <a href="URL_HERE"> -->
-						<img src="ChameleonMT-DATA-DialectBLI01.png" alt="bli" style="max-height:100%;">
-					<!-- </a> -->
-					<figcaption class="text-[2.3vh]">
-						TODO: Image Caption
-					</figcaption>
+			<div class="flex items-center justify-center h-[90%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/Lameli_2008_German_Dialect_Continuum_Map.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(Lameli, 2008) investigated local variants of German.
+					<div class="text-[1.1vh]">
+						<br> (Source: https://aktuell.nationalatlas.de/wp-content/uploads/08_09_Dialektraeume.pdf)
+					</div>
+				</figcaption>
 				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
-	<Slide animate><Layout>
-		<titlebar> Data Cleaning: DialectBLI's German - Bavarian </titlebar>
+	<Slide><Layout>
+		<titlebar > German as Dialect Continuum </titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
-					<!-- <a href="URL_HERE"> -->
-						<img src="ChameleonMT-DATA-DialectBLI02.png" alt="bli" style="max-height:100%;">
-					<!-- </a> -->
-					<figcaption class="text-[2.3vh]">
-						TODO: Image Caption
-					</figcaption>
+			<div class="flex items-center justify-center h-[90%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/Lameli_2008_German_Dialect_Continuum_Table.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(Lameli, 2008) displays the phonetic changes across German-speaking regions.
+					<div class="text-[1.1vh]">
+						<br> (Source: https://aktuell.nationalatlas.de/wp-content/uploads/08_09_Dialektraeume.pdf)
+					</div>
+				</figcaption>
 				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
-	<!-- <script>newSection("Wikidumps");</script> -->
-	<Slide animate><Layout>
-		<titlebar> Data Cleaning: Wikidumps - Bavarian </titlebar>
+	<script>newChapter("Methods & Experiments");</script>
+
+	<Slide><Layout>
+		<titlebar > Linguistic Features </titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
-					<!-- <a href="URL_HERE"> -->
-						<img src="ChameleonMT-DATA-WikidumpsOverview.png" alt="bli" style="max-height:100%;">
-					<!-- </a> -->
-					<figcaption class="text-[2.3vh]">
-						TODO: Image Caption
-					</figcaption>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/FILE_HERE" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					Text:
+					<br> Text.
+				</figcaption>
 				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
-	<!-- <script>newSection("Part 2");</script> -->
-	<!-- <Slide><Layout>
-		<titlebar> Part 4 </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide> -->
-
-
-	<script>newChapter("Experiments");</script>
-	<!-- <script>newSection("Experiment A");</script> -->
 	<Slide><Layout>
-		<titlebar> Bavarian-German: Cleaning and Tokenizing Data</titlebar>
+		<titlebar > Bilingual Lexicon Induction </titlebar>
 		<mybody>
-			<!-- <div class="flex h-full items-center justify-center gap-[100px]">
-				Preprocessed text data (cleaned and tokenized):
-			</div> -->
-
-			<div class="grid" style="grid-template-columns: auto; mx-auto my-auto;">
-				<p>Er <strong>is</strong> seit 1 . Mai 2020 im Amt . </p>
-				
-				<p>Er <strong>ist</strong> seit 1 . Mai 2020 im Amt . </p>
-
-				<p> ---------------------------- </p>
-
-				<p>I wünsch dir von Herzen die <strong>süaßte</strong> Ruah , . </p>
-				
-				<p><mark>I wünsch</mark> dir von Herzen die <strong>sü<mark>a</mark>ßeste</strong> <mark>Ruah</mark> , . </p>
-
-				<p> ---------------------------- </p>
-
-				<p> die Engerl vom Himmel , die deckn di zua .</p>
-				
-				<p> , die <mark>Engerl</mark> vom Himmel , die decken <mark>di zua</mark> . </p>
-
-				<p> ---------------------------- </p>
-
-				<p><strong>De Gmoa</strong> liegt im Valle Anzasca . </p>
-				
-				<p><strong>Die Gemeinde</strong> liegt im Valle Anzasca . </p>
-
-				<p> ---------------------------- </p>
-
-				<p>Am 1. <strong>Jenna</strong> 1977 <strong>is</strong> Rosenbach <strong>dazua kema</strong> . </p>
-				
-				<p>Am 1. <strong>Januar</strong> 1977 <strong>kam</strong> Rosenbach <strong>hinzu</strong> . </p>
-
-				<p> ---------------------------- </p>
-
-				<p><strong>Ea is mid ana Goidmedaj vabundn .</strong></p>
-				
-				<p><strong>Er ist mit einer Goldmedaille verbunden . </strong></p>
-			
-				<!-- <p>Er <strong>is</strong> seit 1 . Mai 2020 im Amt . </p>
-				<p> &nbsp; ||| &nbsp; </p>
-				<p>Er <strong>ist</strong> seit 1 . Mai 2020 im Amt . </p>
-				
-				<p>I wünsch dir von Herzen die <strong>süaßte</strong> Ruah , . </p>
-				<p> &nbsp; ||| &nbsp; </p>
-				<p><mark>I wünsch</mark> dir von Herzen die <strong>sü<mark>a</mark>ßeste</strong> <mark>Ruah</mark> , . </p>
-
-				<p> die Engerl vom Himmel , die deckn di zua .</p>
-				<p> &nbsp; ||| &nbsp; </p>
-				<p> , die <mark>Engerl</mark> vom Himmel , die decken <mark>di zua</mark> . </p>
-
-				<p><strong>De Gmoa</strong> liegt im Valle Anzasca . </p>
-				<p> &nbsp; ||| &nbsp; </p>
-				<p><strong>Die Gemeinde</strong> liegt im Valle Anzasca . </p>
-
-				<p>Am 1. <strong>Jenna</strong> 1977 <strong>is</strong> Rosenbach <strong>dazua kema</strong> . </p>
-				<p> &nbsp; ||| &nbsp; </p>
-				<p>Am 1. <strong>Januar</strong> 1977 <strong>kam</strong> Rosenbach <strong>hinzu</strong> . </p>
-
-				<p><strong>Ea is mid ana Goidmedaj vabundn .</strong></p>
-				<p> &nbsp; ||| &nbsp; </p>
-				<p><strong>Er ist mit einer Goldmedaille verbunden . </strong></p> -->
-
-				<!-- <p> </p>
-				<p> &nbsp; ||| &nbsp; </p>
-				<p> </p> -->
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="ChameleonMT-BLI-BLI.png" alt="bli" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					Inspiration for this figure:
+					<br> (Wang et al., 2021) Porject Report - Training Domain Specific Multilingually Aligned Word Embeddings
+					<br> (Irvine and Callison-Burch, 2017) A Comprehensive Analysis of Bilingual Lexicon Induction
+				</figcaption>
+				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
-	<Slide><Layout>
-		<titlebar> Bavarian-German: Learn Byte-Pair Encoding (BPE)</titlebar>
-		<mybody>
-			<!-- <p>Using subwordNMT, a byte-pair encoding was learned:</p> -->
-
-			<div class="grid" style="grid-template-columns: auto ; mx-auto my-auto;">
-				<p>c &nbsp; &nbsp; h </p>
-				<p>c &nbsp; &nbsp; h "eow"</p> <!-- "eow" stands for </w> which HTML does not like -->
-				<p>s &nbsp; &nbsp; ch</p>
-				<p>i &nbsp; &nbsp; sch</p>
-				<p>S &nbsp; &nbsp; ch</p>
-				<p>a &nbsp; &nbsp; ch"eow"</p>
-				<p>i &nbsp; &nbsp; ch</p>
-				<p>li &nbsp; &nbsp; ch</p>
-				<p>ich &nbsp; &nbsp; t</p>
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar> Bavarian-German: Apply Byte-Pair Encoding (BPE)</titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Applying the byte-pair encoding on the text data:
-			</div>
-
-			<div class="grid" style="grid-template-columns: auto ; mx-auto my-auto;">
-				<p>I wünsch dir von Herzen die süaßte Ruah , die Engerl vom Himmel , die deckn di zua .</p>
-				<p>I wün@@ sch dir von Herzen die sü@@ aß@@ te Ru@@ ah , die En@@ gerl vom Himmel , die de@@ ckn di zua .</p>
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar> Bavarian-German: Training</titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Training a language model via Sockeye:
-			</div>
-
-			<div class="grid" style="grid-template-columns: auto ; mx-auto my-auto;">
-				<p>TODO: Visualize somehow?</p>
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<Slide><Layout>
-		<titlebar> Bavarian-German: Translate Test Data</titlebar>
-		<mybody>
-			<!-- <div class="flex h-full items-center justify-center gap-[100px]">
-				<p>Using the trained model, the test data can be translated now.</p>
-				<p>Reversing the BPE gives us the sentences:</p>
-			</div> -->
-
-			<div class="grid" style="grid-template-columns: auto ; mx-auto my-auto;">
-				<p>Too good to be true?</p>
-				<p>Bavarian: Duachn Ort fiaht de Stootsstroß 2307 . </p>
-				<p>Translated: Durch den Ort führt die Staatsstraße 2307 . </p>
-				<p>German: Durch den Ort führt die Staatsstraße 2307 . </p>
-
-				<p> ---------------------------- </p>
-
-				<p>Close, but no cigar</p>
-				<p>Bavarian: Da franzesische Journalist Henri Alleg hod Folta und Hoft iwalebd . </p>
-				<p>Translated: Der französische Journalist Henri Alleg übernahm Folter und Hoft . </p>
-				<p>German: Der französische Journalist Henri Alleg überlebte Folter und Haft . </p>
-
-				<p> ---------------------------- </p>
-
-				<p>Perfect hallucination?</p>
-				<p>Bavarian: Bis 1978 hod Kleinhögl zua Gmoa Högl gheat . </p>
-				<p>Translated: Im Zuge der Gebietsreform in Bayern wurde Kleinhögl am 1 . Mai 1978 nach Ansbach eingemeindet .</p>
-				<p>German: Bis zu deren Auflösung 1978 gehörte Kleinhögl zur Gemeinde Högl . </p>
-				
-				<!-- <p>?</p>
-				<p>Bavarian: </p>
-				<p>Translated: </p>
-				<p>German: </p> -->
-				 
-			</div>
-		</mybody>
-	</Layout></Slide>
-	
-	<!-- <Slide><Layout>
-		<titlebar> Bavarian-German: Evaluation</titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				The test data is used to score the model's performance via SacreBLEU:
-			</div>
-
-			<div class="grid" style="grid-template-columns: auto ; mx-auto my-auto;">
-				<p>TODO: Visualize somehow?</p>
-			</div>
-		</mybody>
-	</Layout></Slide> -->
 	
 
-	<!-- <script>newSection("Experiment B");</script> -->
-	<!-- <Slide><Layout>
-		<titlebar> Experiment B </titlebar>
+	<Slide><Layout>
+		<titlebar > Synthetic Data </titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide> -->
-
-	<script>newChapter("Evaluation");</script>
-	<!-- <script>newSection("Evaluation");</script> -->
-	<Slide animate><Layout>
-		<titlebar> Evaluation of Machine Translation </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
-					<!-- <a href="URL_HERE"> -->
-						<img src="ChameleonMT-EVAL-Overview.png" alt="bli" style="max-height:100%;">
-					<!-- </a> -->
-					<figcaption class="text-[2.3vh]">
-						BLEU (Bilingual Evaluation Understudy): is an evaluation metric that matches n-grams for evaluation of translation with explicit ordering. Designed to be used for several reference translation, in practice it's used with only the single one. BLEU is infamously dependent on the tokenization technique, and scores achieved with different ones are incomparable.
-					</figcaption>
-				</figure>
-			</div>
-		</mybody>
-	</Layout></Slide>
-	
-	<Slide animate><Layout>
-		<titlebar> Evaluation via BLEU </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
-					<!-- <a href="URL_HERE"> -->
-						<img src="ChameleonMT-EVAL-SacreBLEU.png" alt="bli" style="max-height:100%;">
-					<!-- </a> -->
-					<figcaption class="text-[2.3vh]">
-						BLEU (Bilingual Evaluation Understudy): is an evaluation metric that matches n-grams for evaluation of translation with explicit ordering. Designed to be used for several reference translation, in practice it's used with only the single one. BLEU is infamously dependent on the tokenization technique, and scores achieved with different ones are incomparable.
-					</figcaption>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/FILE_HERE" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					Text:
+					<br> Text.
+				</figcaption>
 				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
-	<Slide animate><Layout>
-		<titlebar> Evaluation via TER </titlebar>
+	<Slide><Layout>
+		<titlebar > Evaluation Metrics </titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
-					<!-- <a href="URL_HERE"> -->
-						<img src="ChameleonMT-EVAL-TER.png" alt="bli" style="max-height:100%;">
-					<!-- </a> -->
-					<figcaption class="text-[2.3vh]">
-						TER (Translation Error (sometimes Edit) Rate): is a useful metric for evaluating machine translation quality, and it can be effective even in low-resourced scenarios.
-					</figcaption>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/FILE_HERE" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					Text:
+					<br> Text.
+				</figcaption>
 				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
-	<Slide animate><Layout>
-		<titlebar> Evaluation via chrF </titlebar>
+	<Slide><Layout>
+		<titlebar > Data Cleaning </titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<figure class="mx-auto my-auto h-[90%]" >
+			<div class="flex items-center justify-center h-[100%]">
+				<figure class="mx-auto my-auto h-[100%]" >
 					<!-- <a href="URL_HERE"> -->
-						<img src="ChameleonMT-EVAL-chrF.png" alt="bli" style="max-height:100%;">
+						<img src="ChameleonMT-DATA-DialectBLI02.png" alt="datacleaning" style="max-height:100%;">
 					<!-- </a> -->
 					<figcaption class="text-[2.3vh]">
-						chrF (Character n-gram F-score): is a robust metric for evaluating translation quality, especially for languages with complex morphology. It’s less sensitive to tokenization issues and can provide a more nuanced view of translation quality by focusing on character-level matches. This makes it particularly useful for low-resourced languages or those with rich morphological variations.
+						Examples of "aligned" Bavarian and Standard German sentences that have been excluded from the dataset 
+						<br> (smaller font indicates content missing in the other variant's sentence)
+
 					</figcaption>
 				</figure>
 			</div>
@@ -905,122 +507,237 @@
 	</Layout></Slide>
 
 	<script>newChapter("Results");</script>
-	<!-- <script>newSection("Part 1");</script> -->
 	<Slide><Layout>
-		<titlebar> Part 1 </titlebar>
+		<titlebar > What I got out of it</titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				<div class="w-[95vw] h-[75vh] bg-gray-700">
-					<iframe src="pdf/2024_MA_Thesis_Christian_Schuler.pdf#page=7&zoom=180" frameBorder="0" scrolling="auto" height="100%" width="100%" title="Documentation"></iframe>
-				</div>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/MA-Data-Maps-20240627135334614.webp" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(Burghardt et al., 2016) created (but did not release) a lexicon of Bavarian dialects.
+					<br> Overview of the main Bavarian dialect families and the regions where they occur.
+				</figcaption>
+				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
-	<!-- <script>newSection("Part 2");</script> -->
-	<!-- <Slide><Layout>
-		<titlebar> Part 2 </titlebar>
+
+	<!-- <script>newChapter("Main Challenge");</script> -->
+	<script>newChapter("Related Work");</script>
+	<Slide><Layout>
+		<titlebar > Origin of the Noise - Bavarian Dialect Families</titlebar>
 		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/MA-Data-Maps-20240627135334614.webp" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(Burghardt et al., 2016) created (but did not release) a lexicon of Bavarian dialects.
+					<br> Overview of the main Bavarian dialect families and the regions where they occur.
+				</figcaption>
+				</figure>
 			</div>
 		</mybody>
-	</Layout></Slide> -->
+	</Layout></Slide>
 
+	<Slide><Layout>
+		<titlebar > Origin of the Noise - Bavarian Varieties</titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/MA-Data-Maps-20240630123335540.webp" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					German-Wikipedia article for Bairisch (https://de.wikipedia.org/wiki/Bairisch) regarding Middle-Bavarian variants: 
+					<br> 
+					<br> Die Tabelle ist dabei stark vereinfacht. In der westlichen Variante wird häufig noch das „r“ gesprochen, 
+					<br> das im Ostmittelbairischen und im Standarddeutschen gerne vokalisiert wird; also z. B. i får, hart, hårt, hirt. 
+					<br> 
+					<br> (Eng:) The table is very simplyfied. In the western variant the "r" is often times still spoken, 
+					<br> while the eastern-middle variant and Standard German tend to vocalize it; meaning for example: i får, hart, hårt, hirt."
+				</figcaption>
+				</figure>					
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Origin of the Noise - Transition Zones</titlebar>
+		<mybody>
+			<div class="flex items-center justify-center h-[85%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="images/MA-Data-Maps-20240627134952078.webp" alt="datacleaning" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[1.8vh]">
+						(Lanwermeyer et al., 2016) investigate how dialect variation influences phonological and lexical-semantic word processing:
+						<br> The Bavarian-Alemannic transition zone (BA) and the Central Bavarian dialect area (CB) 
+						<br> with × displaying the recording location (Merching) and experimentation location (Isen).
+					</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+	
+	<Slide><Layout>
+		<titlebar > Origin of the Noise - Alpine Region</titlebar>
+		<mybody>
+			<div class="flex items-center justify-center h-[90%]">
+				<figure class="mx-auto my-auto h-[95%]" >
+					<!-- <a href="URL_HERE"> -->
+						<img src="images/MA-Data-Maps-20240627132734017.webp" alt="datacleaning" style="max-height:100%;">
+					<!-- </a> -->
+					<figcaption class="text-[1.8vh]">
+						(Vergeiner and Bülow, 2023) investigate geolinguistic structures of dialect phonology in German-speaking Alpine regions:
+						<br> Bavarian and Alemannic dialects according to Wiesinger (1983) (the chequered areas are transition zones, the red line marks the borders of the Alpine region according to the Alpine Convention; 
+						<br> for further information on the Alpine Convention, see https://www.alpconv.org/en/home/convention/).
+					</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	<Slide><Layout>
+		<titlebar > Origin of the Noise - Bavarian(s)</titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[90%]" >
+					<a href="https://github.com/UniversalDependencies/UD_Bavarian-MaiBaam">
+						<img src="images/German-Varieties-20240405134346025.webp" alt="datacleaning" style="max-height:100%;">
+					</a> 
+					<figcaption class="text-[1.8vh]">
+						In May (Blaschke et al., 2024) released a multi-dialectal Bavarian Universal Dependency treebank
+						<br> with manually annotated part-of-speech tags and syntactic dependencies:
+						<br> Bavarian dialect groups in Germany, Austria and Italy, based on the classification by Wiesinger (1983, map 47.4).
+						<br> Names of dialect groups are in small caps, names of provinces and states in italics.
+					</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
 	
 
-
-	<script>newChapter("Discussion");</script>
-	<!-- <script>newSection("Part 1");</script> -->
-	<Slide><Layout>
-		<titlebar> Part 1 </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<!-- <script>newSection("Part 2");</script> -->
-	<!-- <Slide><Layout>
-		<titlebar> Part 2 </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide> -->
-
-
-	<script>newChapter("Future Work");</script>
-	<!-- <script>newSection("Direction A");</script> -->
-	<Slide><Layout>
-		<titlebar> Direction A </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<!-- <script>newSection("Direction B");</script> -->
-	<!-- <Slide><Layout>
-		<titlebar> Direction B</titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide> -->
-
-
-	<script>newChapter("Conclusion");</script>
-	<!-- <script>newSection("Regarding RQ-1");</script> -->
-	<Slide><Layout>
-		<titlebar> Regarding RQ-1 </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<!-- <script>newSection("Regarding RQ-2");</script> -->
-	<Slide><Layout>
-		<titlebar> Regarding RQ-2 </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-
-	<script>newChapter("Appendix");</script>
-	<!-- <script>newSection("Appendix A");</script> -->
-	<Slide><Layout>
-		<titlebar> Appendix A </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	<!-- <script>newSection("Appendix B");</script> -->
-	<!-- <Slide><Layout>
-		<titlebar> Appendix B </titlebar>
-		<mybody>
-			<div class="flex h-full items-center justify-center gap-[100px]">
-				Placeholder
-			</div>
-		</mybody>
-	</Layout></Slide> -->
-
-	<!---
-	- Put Pizza-Statistics into Appendix
 	
-	-->
+	
+	<script>newChapter("Next Steps");</script>
+
+	<Slide><Layout>
+		<titlebar > Sorting Wikipedia Articles - Alemannic Example </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center h-[80%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/MA-Thesis-Alemannic-Lambrecht-Map.png" alt="alemannic_map" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(Lambrecht et al., 2022) worked on Machine Translation from 
+					<br> Standard German to Alemannic Dialects: 
+					<br> Alemannic variants with fluent transitions.
+					<div class="text-[0.7vh]">
+						<br> (Source: https://sigul-2022.ilc.cnr.it/wp-content/uploads/2022/06/MT-from-Standard-German-to-Alemannic-Dialects-Louisa-Lambrecht-Felix-Schneider-Alexander-Waibel.pdf)
+					</div>
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Sorting Wikipedia Articles - Alemannic Example </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/MA-Thesis-Alemannic-Lambrecht-Table.png" alt="alemannic_map" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(Lambrecht et al., 2022): Splitting the Corpora via linguistic analysis.
+					<div class="text-[0.7vh]">
+						<br> (Source: https://sigul-2022.ilc.cnr.it/wp-content/uploads/2022/06/MT-from-Standard-German-to-Alemannic-Dialects-Louisa-Lambrecht-Felix-Schneider-Alexander-Waibel.pdf)
+					</div>
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Sorting Wikipedia Articles - Alemannic Example </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/MA-Thesis-Alemannic-Lambrecht-Pie.png" alt="alemannic_map" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(Lambrecht et al., 2022): Categorisation of Alemannic and Distribution of tagged articles.
+						<br> Margravian (mg), Basel German (bd), Swabian (sw), High Alemannic (ha), 
+						<br> Low Alemannic (na), Highest Alemannic (hoe), Alsatian (els), others (so).
+					<div class="text-[0.7vh]">
+						<br> (Source: https://sigul-2022.ilc.cnr.it/wp-content/uploads/2022/06/MT-from-Standard-German-to-Alemannic-Dialects-Louisa-Lambrecht-Felix-Schneider-Alexander-Waibel.pdf)
+					</div>
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Wikidumps </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="ChameleonMT-DATA-WikidumpsProgress.png" alt="wikidumpprogress" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					Current progress of this approach (for Alemannic and Bavarian). 
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+
+	<Slide><Layout>
+		<titlebar > NLLB-Tuning </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				Once the quality of data cleaning and perturbation has reached the next step. 
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Beyond German - Northern Kurdish (Kurmanjî) and Central Kurdish (Soranî) </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<ul class="a" >
+					<li>OpusTools provides (somewhat) aligned data for both</li>
+					<br>
+					<li>Both have their own wikipedia <p class="text-[2.1vh]">(https://meta.wikimedia.org/wiki/List_of_Wikipedias)</p></li>
+					<ul class="b"> 
+						<li>English: 6,843,344</li>
+						<li>German: 2,922,376</li>
+						<li>Kurmanjî: 76,183</li>
+						<li>Soranî: 56,007</li>
+						<li>Alemannic: 30,509</li>
+						<li>Bavarian: 27,168</li>
+					</ul>
+					<br>
+					<li>Already got a small set of data filtered by sub-dialects</li>
+				</ul>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Clean Data - Better Alignments </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center h-[90%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="LanguageData-TextAlignments.png" alt="wikidumpprogress" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					Notion to reduce noise in available (aligned) data sources via language models. 
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
 
 
 
