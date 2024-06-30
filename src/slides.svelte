@@ -72,7 +72,7 @@
 			<span id="myuni"></span>
 		</div>
 		<div class="flex items-center justify-center">
-			<img class="h-[18vh] align-middle" src="up-uhh-logo-u-2010-u-png.png" alt="uhh logo">
+			<img class="h-[18vh] w-auto align-middle" src="up-uhh-logo-u-2010-u-png.png" alt="uhh logo">
 		</div>
 		<div class="text-[2.5vh]"> 
 			<br>
@@ -217,7 +217,7 @@
 	<Slide><Layout>
 		<titlebar > Distribution of Languages on the Internet </titlebar> 
 		<mybody>
-			<div class="flex items-center justify-center w-[50%] h-[100%]">
+			<div class="flex items-center justify-center w-[50%] h-[100%] ml-[-3%]">
 				<figure class="mx-auto my-auto" >
 					<!-- <a href="URL_HERE"> -->
 						<img class="align-middle" src="LowResource-IL09.png" alt="weblanguages">
@@ -361,7 +361,7 @@
 
 	<Slide><Layout>
 		<titlebar > German </titlebar>
-		<mybody>
+		<mybody class="mt-[-1%]">
 			<div class="flex items-center justify-center h-[90%]">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
 					<img src="images/german-dialects.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
@@ -391,7 +391,7 @@
 	
 	<Slide><Layout>
 		<titlebar > German as Dialect Continuum </titlebar>
-		<mybody>
+		<mybody  class="mt-[-1%]">
 			<div class="flex items-center justify-center h-[90%]">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
 					<img src="images/Lameli_2008_German_Dialect_Continuum_Map.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
@@ -408,7 +408,7 @@
 
 	<Slide><Layout>
 		<titlebar > German as Dialect Continuum </titlebar>
-		<mybody>
+		<mybody  class="mt-[-1%]">
 			<div class="flex items-center justify-center h-[90%]">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
 					<img src="images/Lameli_2008_German_Dialect_Continuum_Table.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
@@ -492,9 +492,9 @@
 		<titlebar > Data Cleaning </titlebar>
 		<mybody>
 			<div class="flex items-center justify-center h-[100%]">
-				<figure class="mx-auto my-auto h-[100%]" >
+				<figure class="mx-auto my-auto w-[100%]" >
 					<!-- <a href="URL_HERE"> -->
-						<img src="ChameleonMT-DATA-DialectBLI02.png" alt="datacleaning" style="max-height:100%;">
+						<img src="ChameleonMT-DATA-DialectBLI02.png" alt="datacleaning" class="w-[85vw]">
 					<!-- </a> -->
 					<figcaption class="text-[2.3vh]">
 						Examples of "aligned" Bavarian and Standard German sentences that have been excluded from the dataset 
@@ -562,7 +562,7 @@
 
 	<Slide><Layout>
 		<titlebar > Origin of the Noise - Transition Zones</titlebar>
-		<mybody>
+		<mybody class="mt-[-2%]">
 			<div class="flex items-center justify-center h-[85%]">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
 					<!-- <a href="URL_HERE"> -->
@@ -580,7 +580,7 @@
 	
 	<Slide><Layout>
 		<titlebar > Origin of the Noise - Alpine Region</titlebar>
-		<mybody>
+		<mybody class="mt-[-2%]">
 			<div class="flex items-center justify-center h-[90%]">
 				<figure class="mx-auto my-auto h-[95%]" >
 					<!-- <a href="URL_HERE"> -->
@@ -603,7 +603,7 @@
 			<div class="flex items-center justify-center">
 				<figure class="mx-auto my-auto h-[90%]" >
 					<a href="https://github.com/UniversalDependencies/UD_Bavarian-MaiBaam">
-						<img src="images/German-Varieties-20240405134346025.webp" alt="datacleaning" style="max-height:100%;">
+						<img src="images/German-Varieties-20240405134346025.webp" alt="datacleaning" style="height: 100%;width: auto;">
 					</a> 
 					<figcaption class="text-[1.8vh]">
 						In May (Blaschke et al., 2024) released a multi-dialectal Bavarian Universal Dependency treebank
@@ -623,7 +623,7 @@
 
 	<Slide><Layout>
 		<titlebar > Sorting Wikipedia Articles - Alemannic Example </titlebar>
-		<mybody>
+		<mybody class="mt-[-2%]">
 			<div class="flex items-center justify-center h-[80%]">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
 					<img src="images/MA-Thesis-Alemannic-Lambrecht-Map.png" alt="alemannic_map" style="max-height:100%; max-width:100%;">
@@ -702,7 +702,7 @@
 	</Layout></Slide>
 
 	<Slide><Layout>
-		<titlebar > Beyond German - Northern Kurdish (Kurmanjî) and Central Kurdish (Soranî) </titlebar>
+		<titlebar class="text-[4.5vh]"> Beyond German - Northern Kurdish (Kurmanjî) and Central Kurdish (Soranî) </titlebar>
 		<mybody>
 			<div class="flex items-center justify-center">
 				<ul class="a" >
@@ -863,6 +863,11 @@
 			border: 0px #cccccc solid;
 			padding: 4px;
 			margin: auto;
+		}
+		img{
+			margin-left: auto;
+			margin-right: auto;
+			width: 100%;
 		}
 		figcaption {
 			background-color: rgb(242,242,242);
