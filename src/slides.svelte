@@ -125,20 +125,56 @@
 				
 				<!-- Names -->
 				<div class="flex w-[25vw] items-center justify-center gap-[10px]">
-					Christian Schuler <br> (Student)
+					Christian Schuler <br> 
 				</div>
 				<div class="flex w-[25vw] items-center justify-center gap-[10px]">
-					Dr. Sina Ahmadi <br> (Supervisor)
+					Dr. Sina Ahmadi <br> 
 				</div>
 				<div class="flex w-[25vw] items-center justify-center gap-[10px]">
-					Dr. Seid Muhie Yimam <br> (Supervisor & Examiner)
+					Dr. Seid Muhie Yimam <br> 
 				</div>
 				<div class="flex w-[25vw] items-center justify-center gap-[10px]">
-					Prof. Dr. Chris Biemann <br> (Examiner)
+					Prof. Dr. Chris Biemann <br> 
 				</div>
 
 				<!-- Images -->
-				<figure class="h-[60vh] w-[20vw] float-left mx-auto my-auto">
+				<figure class="h-[70vh] w-[24vw] float-left mx-auto my-auto">
+					<a href="https://christianschuler8989.github.io/">
+						<img src="christian_schuler_01.png" alt="christian" class="h-[60vh] mx-auto">
+					</a>
+					<figcaption class="text-[3.3vh]">
+						(Student)
+					</figcaption>
+				</figure>
+
+				<figure class="h-[70vh] w-[24vw] float-left mx-auto my-auto">
+					<a href="https://sinaahmadi.github.io/">
+						<img src="sina_ahmadi_05.png" alt="sina" class="h-[60vh] mx-auto">
+					</a>
+					<figcaption class="text-[3.3vh]">
+						(Supervisor)
+					</figcaption>
+				</figure>
+
+				<figure class="h-[70vh] w-[24vw] float-left mx-auto my-auto">
+					<a href="https://seyyaw.github.io/">
+						<img src="seid_muhie_yimam_05.png" alt="seid" class="h-[60vh] mx-auto">
+					</a>
+					<figcaption class="text-[3.3vh]">
+						(Supervisor & Examiner)
+					</figcaption>
+				</figure>
+
+				<figure class="h-[70vh] w-[24vw] float-left mx-auto my-auto">
+					<a href="https://www.inf.uni-hamburg.de/en/inst/ab/lt/people/chris-biemann.html">
+						<img src="chris_biemann_05.png" alt="chris" class="h-[60vh] mx-auto" >
+					</a>
+					<figcaption class="text-[3.3vh]">
+						(Examiner)
+					</figcaption>
+				</figure>
+				
+				<!-- <figure class="h-[60vh] w-[20vw] float-left mx-auto my-auto">
 					<a href="https://christianschuler8989.github.io/">
 						<img src="student_christian.jpg" alt="christian" class="h-[40vh]">
 						<figcaption class="text-[2.3vh]">
@@ -182,7 +218,7 @@
 					<figcaption class="text-[1.3vh]">
 						Chris is the best lazerkasoo player I have ever heard of!
 					</figcaption>
-				</figure>
+				</figure> -->
 
 			</div>
 		</mybody>
@@ -270,6 +306,12 @@
 			<div class="flex items-center justify-center">
 				<figure class="mx-auto my-auto" >
 					<img src="exploratory-2023_11_28-benglai.png" alt="exploringDialectMT">
+					<figcaption class="text-[1.8vh]">
+						These exploratory experiments utilized the translation systems Google Translate (https://translate.google.com/) 
+						<br> via the translate-shell (https://github.com/soimort/translate-shell) 
+						<br> and NLLB (Team et al., 2022), various data sets (primarily CODET (Alam, Ahmadi, and Anastasopoulos, 2023)), 
+						<br> and the implementation of BLEU from Fairseq (https://github.com/facebookresearch/fairseq).
+					</figcaption>
 				</figure>
 			</div>
 		</mybody>
@@ -425,6 +467,10 @@
 
 	<script>newChapter("Methods & Experiments");</script>
 
+	<!-- 
+	TODO: (12/29) Linguistic Features
+	Examples from Multi-VALUE and co.
+	-->
 	<Slide><Layout>
 		<titlebar > Linguistic Features </titlebar>
 		<mybody>
@@ -456,8 +502,15 @@
 		</mybody>
 	</Layout></Slide>
 
-	
+		
+	<!-- 
+	TODO: + New Slide ? Struggles with MUSE ?
+	-->
 
+	<!-- 
+	TODO: (14/29) Synthetic Data
+	Examples from my work
+	-->
 	<Slide><Layout>
 		<titlebar > Synthetic Data </titlebar>
 		<mybody>
@@ -472,7 +525,11 @@
 			</div>
 		</mybody>
 	</Layout></Slide>
-
+	
+	<!-- 
+	TODO: (15/29) Evaluation Metrics
+	Issues with BLEU
+	-->
 	<Slide><Layout>
 		<titlebar > Evaluation Metrics </titlebar>
 		<mybody>
@@ -488,6 +545,11 @@
 		</mybody>
 	</Layout></Slide>
 
+
+	<!-- 
+	TODO: (16/29) Data Cleaning 
+	Highlight ~2 (important) examples to talk about.
+	-->
 	<Slide><Layout>
 		<titlebar > Data Cleaning </titlebar>
 		<mybody>
@@ -506,6 +568,11 @@
 		</mybody>
 	</Layout></Slide>
 
+
+	<!-- 
+	TODO: (17/29) What I got out of it [Results]
+	Tables from Overleaf and some sentences?
+	-->
 	<script>newChapter("Results");</script>
 	<Slide><Layout>
 		<titlebar > What I got out of it</titlebar>
@@ -523,6 +590,17 @@
 	</Layout></Slide>
 
 
+	<!-- 
+	TODO: ? New Slide ? Me and ma sea of Papers
+	When I say "There is no data", I mean "I did not find any data", which does *NOT* equate to a two-minute-google-search . . .
+	→ This is not bragging... It would probably have been reasonable to read less than I did by now and more than one person in this room tried to stop me XD
+	-->
+
+
+	<!-- 
+	TODO: (18/29) Origin of the Noise - Bavarian Dialect Families
+	Highlight the "Mittelbairisch" for next slide transition
+	-->
 	<!-- <script>newChapter("Main Challenge");</script> -->
 	<script>newChapter("Related Work");</script>
 	<Slide><Layout>
@@ -540,6 +618,12 @@
 		</mybody>
 	</Layout></Slide>
 
+
+	<!-- 
+	TODO: (19/29) Origin of the Noise - Bavarian Varieties
+	Highlight a few words to talk about and show differences.
+	Rework caption and maybe move it next to table? Highlight the english part?
+	-->
 	<Slide><Layout>
 		<titlebar > Origin of the Noise - Bavarian Varieties</titlebar>
 		<mybody>
@@ -578,6 +662,11 @@
 		</mybody>
 	</Layout></Slide>
 	
+
+	<!-- 
+	TODO: (21/29) Origin of the Noise - Alpine Region
+	Highlight or otherwise make crytal clear, that we have to cross (multiple) country borders now.
+	-->
 	<Slide><Layout>
 		<titlebar > Origin of the Noise - Alpine Region</titlebar>
 		<mybody class="mt-[-2%]">
@@ -617,10 +706,18 @@
 	</Layout></Slide>
 	
 
+	<!-- 
+	TODO: + New Slide ? Mapping of Bavarian variants between works and datasets (From Obsidian) ?
+	-->
+
 	
 	
 	<script>newChapter("Next Steps");</script>
 
+	<!-- 
+	TODO: (23/29) Sorting Wikipedia Articles - Alemannic Example
+	→ Title: Falling Down (the Rabbit Hole)
+	-->
 	<Slide><Layout>
 		<titlebar > Sorting Wikipedia Articles - Alemannic Example </titlebar>
 		<mybody class="mt-[-2%]">
@@ -640,6 +737,11 @@
 		</mybody>
 	</Layout></Slide>
 
+	<!-- 
+	TODO: (24/29) Sorting Wikipedia Articles - Alemannic Example
+	Crop out "Alagnadeutsch" and "Issimedeutsch"
+	→ Title: "12 Angry Subdialects"
+	-->
 	<Slide><Layout>
 		<titlebar > Sorting Wikipedia Articles - Alemannic Example </titlebar>
 		<mybody>
@@ -657,6 +759,10 @@
 		</mybody>
 	</Layout></Slide>
 
+	<!-- 
+	TODO: (25/29) Sorting Wikipedia Articles - Alemannic Example
+	→ Title: Good Word Hunting
+	-->
 	<Slide><Layout>
 		<titlebar > Sorting Wikipedia Articles - Alemannic Example </titlebar>
 		<mybody>
@@ -675,7 +781,17 @@
 			</div>
 		</mybody>
 	</Layout></Slide>
+	
+	<!-- 
+	TODO: + New Slide ? (Lambrecht et al., 2022): "Splitting into Alemannic variants shows great improvements"
+	Also talk about how they just dropped the effing ball...
+	→ Title: The Day The Wikidump Was Still Cleaned
+	-->
 
+	<!-- 
+	TODO: (26/29) Sorting Wikipedia Articles - Current State
+	→ Title: A Fistful Of Dialects
+	-->
 	<Slide><Layout>
 		<titlebar > Wikidumps </titlebar>
 		<mybody>
@@ -691,7 +807,10 @@
 	</Layout></Slide>
 
 
-
+	<!-- 
+	TODO: (27/29) NLLB-Tuning
+	→ Title: Two Hundred And One Languages
+	-->
 	<Slide><Layout>
 		<titlebar > NLLB-Tuning </titlebar>
 		<mybody>
@@ -738,115 +857,10 @@
 		</mybody>
 	</Layout></Slide>
 
+
+
 <!-- 
- # Last Big TODOs
-
-(6/29) Exploring Dialect Machine Translation
-
-These exploratory experiments utilized the translation systems Google Translate (https://translate.google.com/) via the translate-shell (https://github.com/soimort/translate-shell) and NLLB (Team et al., 2022), various data sets (primarily CODET (Alam, Ahmadi, and Anastasopoulos, 2023)), and the implementation of BLEU from Fairseq (https://github.com/facebookresearch/fairseq). 
-
-
-
-(12/29) Linguistic Features
-
-Examples from Multi-VALUE and co.
-
-
-+ New Slide ? Struggles with MUSE ?
-
-
-
-(14/29) Synthetic Data
-
-Examples from my work
-
-
-
-(15/29) Evaluation Metrics
-
-Issues with BLEU
-
-
-
-(16/29) Data Cleaning 
-
-Highlight ~2 (important) examples to talk about.
-
-
-
-(17/29) What I got out of it [Results]
-
-Tables from Overleaf and some sentences?
-
-
-
-(18/29) Origin of the Noise - Bavarian Dialect Families
-
-Highlight the "Mittelbairisch" for next slide transition
-
-
-
-(19/29) Origin of the Noise - Bavarian Varieties
-
-Highlight a few words to talk about and show differences.
-
-Rework caption and maybe move it next to table? Highlight the english part?
-
-
-
-(21/29) Origin of the Noise - Alpine Region
-
-Highlight or otherwise make crytal clear, that we have to cross (multiple) country borders now.
-
-
-+ New Slide ? Mapping of Bavarian variants between works and datasets (From Obsidian) ?
-
-
-
-(23/29) Sorting Wikipedia Articles - Alemannic Example
-
-→ Title: Falling Down (the Rabbit Hole)
-
-
-
-(24/29) Sorting Wikipedia Articles - Alemannic Example
-
-Crop out "Alagnadeutsch" and "Issimedeutsch"
-→ Title: "12 Angry Subdialects"
-
-
-
-(25/29) Sorting Wikipedia Articles - Alemannic Example
-
-
-→ Title: Good Word Hunting
-
-
-
-+ New Slide ? (Lambrecht et al., 2022): "Splitting into Alemannic variants shows great improvements"
-Also talk about how they just dropped the effing ball...
-→ Title: The Day The Wikidump Was Still Cleaned
-
-
-(26/29) Sorting Wikipedia Articles - Current State
-
-→ Title: A Fistful Of Dialects
-
-
-
-(27/29) NLLB-Tuning
-
-→ Title: Two Hundred And One Languages
-
-
-
-
-
-
-
-
-
-→ Slide Title Easter Eggs
+TODO: + New Slide ? → Slide Title Easter Eggs
 The Unusual Suspects → The Usual Suspects (1995)
 12 Angry Subdialects → 12 Angry Men (1957)
 Falling Down (the Rabbit Hole) → Falling Down (1993)
@@ -857,8 +871,6 @@ The Day The Wikidump Was Still Cleaned → The Day The Earth Stood Still (1951)
 
 The Good, The Bad And The Others → The Good, The Bad And The Ugly (1967)
 Low-Res is Beautiful → Life is Beautiful (1997)
-
-
  -->
 
 
