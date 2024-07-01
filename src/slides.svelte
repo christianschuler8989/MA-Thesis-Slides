@@ -407,20 +407,18 @@
 
 	<Slide><Layout>
 		<titlebar > German == German ? </titlebar>
-		<mybody>
-			<figure>
-				<video controls class="w-[100%] mx-auto my-auto p-2">
+		<mybody style="flex-direction: column;">
+				<video controls class="h-[85%] mx-auto my-auto">
 					<source src="video/german_dialects.mp4" type="video/mp4" />
 					<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt"/>
 					<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt" default/>
 				</video>
-				<figcaption class="text-[3.2vh]"> 
+				<figcaption class="text-[3.2vh] mt-[-1%] mb-[1%]"> 
 					Peter Frankenfeld - Die Wetterkarte - Deutsche Dialekte 	
 				<div class="text-[2.1vh]">
 					<br> (Source: https://www.youtube.com/watch?v=btlGMBA2XO4)
 				</div>
 				</figcaption>
-			</figure>
 		</mybody>
 	</Layout></Slide>
 	
