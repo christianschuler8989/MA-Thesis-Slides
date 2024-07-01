@@ -574,25 +574,20 @@
 
 	<Slide><Layout>
 		<titlebar > MUSE is Dead - Long live DialectBLI </titlebar>
-		<mybody>
-			<div class="flex items-center justify-center">
-				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
-					<img src="MUSE-github-issue-sina.png" alt="MUSE" style="max-height:100%; max-width:100%;">
-				<figcaption class="text-[2.4vh]">
-					Found my error message in an github-issue, which never got solved.
+		<mybody style="flex-direction: column;">
+				<figure class="mx-auto my-auto h-[50%] w-[100%] mt-[2%]" >
+					<img src="MUSE-github-issue-sina.png" alt="MUSE" class="h-[80%] w-auto">
+				<figcaption class="text-[2.4vh] w-full">
+					Found same error message in an github-issue, which never got solved.
 					<br> MUSE was archived on Oct 31, 2023.
 				</figcaption>
 				</figure>
-			</div>
-			<br>
-			<div class="flex items-center justify-center">
-				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
-					<img src="images/MA-Thesis-BLI-DialectBLI-Table1.png" alt="MUSE" style="max-height:100%; max-width:100%;">
+				<figure class="mx-auto my-auto h-[50%] w-[100%]" >
+					<img src="images/MA-Thesis-BLI-DialectBLI-Table1.png" alt="MUSE" class="h-auto w-full">
 				<figcaption class="text-[2.4vh]">
 					(Artemova & Plank, 2023) Released BLI results for Bavarian and Alemannic.
 				</figcaption>
 				</figure>
-			</div>
 		</mybody>
 	</Layout></Slide>
 
@@ -613,14 +608,12 @@
 	<Slide><Layout>
         <titlebar> The Idea </titlebar>
         <mybody>
-            <div class="flex items-center justify-center">
-                <figure class="mx-auto my-auto h-[100%] w-[100%]" >
+                <figure class="h-[80%] w-auto" >
                         <img src="ChameleonMT-Concept-InitialConcept.png" alt="pathToSyntheticData" style="max-height:100%; max-width:100%;">
                     <figcaption class="text-[4.3vh]">
                         Initial concept of what to do.
                     </figcaption>
                 </figure>
-            </div>
         </mybody>
     </Layout></Slide>
 
@@ -655,25 +648,23 @@
 	<Slide><Layout>
 		<titlebar > Linguistic Features </titlebar>
 		<mybody>
-			<div class="flex items-center justify-center">
+			<div class="my-auto w-[60%]">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
 					<img src="MA-Thesis-Feature-Extraction-Example.png" alt="featureExtraction" style="max-height:100%; max-width:100%;">
-				<figcaption class="text-[1.8vh]">
-					Derived via string matching on aligned words.
-				</figcaption>
+					<figcaption class="text-[1.8vh]">
+						Derived via string matching on aligned words.
+					</figcaption>
 				</figure>
 			</div>
 
-			<div class="flex items-center justify-center">
+			<div class="flex items-center justify-center w-[50%]" style="flex-direction: column;">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
 					<img src="MA-Thesis-Feature-Extraction-Example_0.png" alt="featureExtraction" style="max-height:100%; max-width:100%;">
 				<figcaption class="text-[1.8vh]">
 					From linguistic features to replacement rule (candidates).
 				</figcaption>
 				</figure>
-			</div>
 
-			<div class="flex items-center justify-center">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
 					<img src="MA-Thesis-Feature-Extraction-Example_1.png" alt="featureExtraction" style="max-height:100%; max-width:100%;">
 				<figcaption class="text-[1.8vh]">
