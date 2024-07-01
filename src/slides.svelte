@@ -543,25 +543,43 @@
 	</Layout></Slide>
 
 	<Slide><Layout>
-		<titlebar > Aligning Vector Spaces via MUSE </titlebar>
+		<titlebar > Aligning Vector Spaces via MUSE (Conneau et al., 2018)</titlebar>
 		<mybody>
 			<div class="flex items-center justify-center">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
 					<img src="images/MA-Thesis-BLI-MUSE-Fig1.png" alt="MUSE" style="max-height:100%; max-width:100%;">
-				<figcaption class="text-[2.4vh]">
-					(Conneau et al., 2018) introduced MUSE:
-					<br> Figure 1: Toy illustration of the method. (A) There are two distributions of word embeddings, English words
-					in red denoted by X and Italian words in blue denoted by Y , which we want to align/translate. Each dot
-					represents a word in that space. The size of the dot is proportional to the frequency of the words in the training
-					corpus of that language. (B) Using adversarial learning, we learn a rotation matrix W which roughly aligns the
-					two distributions. The green stars are randomly selected words that are fed to the discriminator to determine
-					whether the two word embeddings come from the same distribution. (C) The mapping W is further refined via
-					Procrustes. This method uses frequent words aligned by the previous step as anchor points, and minimizes an
-					energy function that corresponds to a spring system between anchor points. The refined mapping is then used
-					to map all words in the dictionary. (D) Finally, we translate by using the mapping W and a distance metric,
-					dubbed CSLS, that expands the space where there is high density of points (like the area around the word
-					“cat”), so that “hubs” (like the word “cat”) become less close to other word vectors than they would otherwise
-					(compare to the same region in panel (A)).
+				<figcaption class="text-[3.75vh]">
+						(A) There are two distributions of word embeddings, English words in red denoted by X
+					<div class="text-[3.0vh]">
+						and Italian words in blue denoted by Y, which we want to align/translate.
+					</div>
+					<div class="text-[2.75vh]">
+						Each dot represents a word in that space.
+					</div>
+					<div class="text-[2.5vh]">
+						The size of the dot is proportional to the frequency of the words in the training corpus of that language.
+					</div>
+					<div class="text-[2.25vh]">
+						(B) Using adversarial learning, we learn a rotation matrix W which roughly aligns the two distributions.
+					</div>
+					<div class="text-[2.0vh]">
+						The green stars are randomly selected words that are fed to the discriminator to determine whether the two word embeddings come from the same distribution.
+					</div>
+					<div class="text-[1.75vh]">
+						(C) The mapping W is further refined via Procrustes.
+					</div>
+					<div class="text-[1.5vh]">
+						This method uses frequent words aligned by the previous step as anchor points, and minimizes an energy function that corresponds to a spring system between anchor points.
+					</div>
+					<div class="text-[1.25vh]">
+						The refined mapping is then used to map all words in the dictionary.
+					</div>
+					<div class="text-[1.0vh]">
+						(D) Finally, we translate by using the mapping W and a distance metric, dubbed CSLS, that expands the space where there is high density of points 
+					</div>
+					<div class="text-[0.8vh]">
+						(like the area around the word “cat”), so that “hubs” (like the word “cat”) become less close to other word vectors than they would otherwise (compare to the same region in panel (A)).
+					</div>
 				</figcaption>
 				</figure>
 			</div>
@@ -642,6 +660,21 @@
     </Layout></Slide>
 
 	<Slide><Layout>
+        <titlebar> About Perturbations & Translations </titlebar>
+        <mybody>
+			<div class="flex items-center justify-center">
+                <figure class="mx-auto my-auto h-[100%] w-[100%]" >
+                        <img src="ChameleonMT-MT-ExperimentSetupOverview.png" alt="pathToSyntheticData" style="max-height:100%; max-width:100%;">
+                    <figcaption class="text-[4.3vh]">
+                        Moving across languages.
+                    </figcaption>
+                </figure>
+            </div>
+        </mybody>
+    </Layout></Slide>
+
+
+	<Slide><Layout>
 		<titlebar > Linguistic Features </titlebar>
 		<mybody>
 			<div class="my-auto w-[60%]">
@@ -713,7 +746,15 @@
 					<th>Clean</th>
 					<th>Reference</th>
 					<th>None</th>
-					<th>Die Sprache ist vom Aussterben bedroht , da sie nur von über 60-Jährigen gesprochen wird .</th> 
+					<th class="text-[2.0vh]">Die Sprache ist vom Aussterben bedroht , da sie nur von über 60-Jährigen gesprochen wird .</th> 
+				</tr>
+				<tr>  
+					<th style="background-color: #ebf067">German</th>
+					<th style="background-color: #ff3333">English</th>
+					<th>Clean</th>
+					<th>Reference</th>
+					<th>None</th>
+					<th class="text-[2.0vh]">The language is endangered , as it is only spoken by people over 60 .</th> 
 				</tr>
 				<tr>  
 					<th></th>
@@ -729,7 +770,7 @@
 					<th>Clean</th>
 					<th style="background-color: #b2fffd">Reason</th>
 					<th style="background-color: #ff8383">Lex</th>
-					<th>Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
+					<th class="text-[2.0vh]">Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
 				</tr>
 				<tr>  
 					<th style="background-color: #ebf067">German</th>
@@ -737,7 +778,7 @@
 					<th>Clean</th>
 					<th style="background-color: #b2fffd">Reason</th>
 					<th style="background-color: #d2b0fe">All</th>
-					<th>Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
+					<th class="text-[2.0vh]">Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
 				</tr>
 				<tr>  
 					<th style="background-color: #ebf067">German</th>
@@ -745,7 +786,7 @@
 					<th>Clean</th>
 					<th style="background-color: #b2fffd">Reason</th>
 					<th style="background-color: #618eff">Mor</th>
-					<th>Dien Sproch ists vom Aussterbn bedrohts , da sien <mark>nua</mark> von üba 60-Jähring gsprochn wird .</th>
+					<th class="text-[2.0vh]">Dien Sproch ists vom Aussterbn bedrohts , da sien <mark>nua</mark> von üba 60-Jähring gsprochn wird .</th>
 				</tr>
 				<tr>  
 					<th></th>
@@ -761,7 +802,7 @@
 					<th>Clean</th>
 					<th style="background-color: #7afffc">Relaxed</th>
 					<th style="background-color: #d2b0fe">All</th>
-					<th>Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
+					<th class="text-[2.0vh]">Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
 				</tr>
 				<tr>  
 					<th style="background-color: #ebf067">German</th>
@@ -770,6 +811,14 @@
 					<th style="background-color: #7afffc">Relaxed</th>
 					<th style="background-color: #618eff">Mor</th>
 					<th class="text-[2.0vh]">Dien sprouch ischt vom aassderbn popbedrohd , da'n sien <mark>nua</mark> vonisch us̈popba 60-Ja'n̈hring gsprouchn wirdo .</th>
+				</tr>
+				<tr>  
+					<th style="background-color: #ebf067">German</th>
+					<th style="background-color: #ff3333">English</th>
+					<th>Clean</th>
+					<th style="background-color: #7afffc">Relaxed</th>
+					<th style="background-color: #618eff">Mor</th>
+					<th class="text-[2.0vh]">He 's threatened by the Aassderbn Pop because he 's a new member of the 60-year-old pop group .</th> 
 				</tr>
 				<tr>  
 					<th></th>
@@ -786,6 +835,14 @@
 					<th style="background-color: #7afffc">Relaxed</th>
 					<th style="background-color: #618eff">Mor</th>
 					<th class="text-[1.8vh]">Den sprachs ies voms austerms gelbedarohts weuch wassersen nur vos Leuten den iwas 60 jahr oit wassersern geredet wiert .</th>
+				</tr>
+				<tr>  
+					<th style="background-color: #66d666">Bavarian</th>
+					<th style="background-color: #ff3333">English</th>
+					<th>Clean</th>
+					<th style="background-color: #7afffc">Relaxed</th>
+					<th style="background-color: #618eff">Mor</th>
+					<th class="text-[2.0vh]">The only people who could speak the language of the world were those who had spoken it sixty years ago .</th> 
 				</tr>
 				<tr>
 					<th style="background-color: #66d666">Bavarian</th>
@@ -841,10 +898,18 @@
 					<th>Clean</th>
 					<th>Reference</th>
 					<th>None</th>
-					<th>De Sproch is vom Aasterm bedroht wei se nua vo Leid de iwa 60 Joar oid san gredd wiad .</th>
+					<th class="text-[2.0vh]">De Sproch is vom Aasterm bedroht wei se nua vo Leid de iwa 60 Joar oid san gredd wiad .</th>
+				</tr>
+				<tr>  
+					<th style="background-color: #66d666">Bavarian</th>
+					<th style="background-color: #ff3333">English</th>
+					<th>Clean</th>
+					<th>Reference</th>
+					<th>None</th>
+					<th class="text-[2.0vh]">De Sproch is threatened by aasterm we se nua vo Leid de iwa 60 years oid san gredd wiad .</th> 
 				</tr>
 				</table>
-				<figcaption class="text-[3.8vh]">
+				<figcaption class="text-[2.5vh]">
 					"Reason": 5 or more occurrences & length of less than 6
 					<br> "Relaxed": 1 or more occurrences & length of less than 7
 				</figcaption>
@@ -1263,6 +1328,22 @@
 			</div>
 		</mybody>
 	</Layout></Slide>
+	
+	<!-- 
+	TODO: (27/29) NLLB-Tuning
+	→ Title: Two Hundred And One Languages
+	-->
+	<Slide><Layout>
+		<titlebar > NLLB-Tuning </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				Once the quality of data cleaning and perturbation has reached the next step.
+				<br> Following the guide for Finetuning and curating NLLB-200 with OpenNMT-py from:
+				<br> https://forum.opennmt.net/t/finetuning-and-curating-nllb-200-with-opennmt-py/5238/20
+			</div>
+		</mybody>
+	</Layout></Slide>
+
 
 	<Slide><Layout>
 		<titlebar class="text-[4.5vh]"> Beyond German - Northern Kurdish (Kurmanjî) and Central Kurdish (Soranî) </titlebar>
@@ -1282,21 +1363,9 @@
 					</ul>
 					<br>
 					<li>Already got a small set of data filtered by sub-dialects</li>
+					<br>
+					<li>Script normalization is not trivial though </li>
 				</ul>
-			</div>
-		</mybody>
-	</Layout></Slide>
-
-	
-	<!-- 
-	TODO: (27/29) NLLB-Tuning
-	→ Title: Two Hundred And One Languages
-	-->
-	<Slide><Layout>
-		<titlebar > NLLB-Tuning </titlebar>
-		<mybody>
-			<div class="flex items-center justify-center">
-				Once the quality of data cleaning and perturbation has reached the next step. 
 			</div>
 		</mybody>
 	</Layout></Slide>
@@ -1335,25 +1404,25 @@ Low-Res is Beautiful → Life is Beautiful (1997)
 		<mybody class="mt-[-2%]">
 			<div class="flex items-center justify-center">
 				<ul class="a" >
-					<li class="text-[5.1vh]">1.) State-of-the-art Performance</li>
+					<li class="text-[4.1vh]">1.) State-of-the-art Performance</li>
 					<br>
 					<ul class="b text-[2.1vh]"> 
 						<li>What is the performance of the current state-of-the-art models in translating dialects?</li>
 					</ul>
 					<br>
-					<li class="text-[5.1vh]">2.) Linguistic Information for Synthetic Sentences</li>
+					<li class="text-[4.1vh]">2.) Linguistic Information for Synthetic Sentences</li>
 					<br>
 					<ul class="b text-[2.1vh]"> 
 						<li>Can we incorporate linguistic information in MT to synthetically generate sentences in language variants so that dialects of various <br> (and especially low-resource) languages can be processed more efficiently?</li>
 					</ul>
 					<br>
-					<li class="text-[5.1vh]">3.) Requirements of Different Languages</li>
+					<li class="text-[4.1vh]">3.) Requirements of Different Languages</li>
 					<br>
 					<ul class="b text-[2.1vh]"> 
 						<li>What are requirements for deriving tools and processes that can be applied to vastly different languages from various language families?</li>
 					</ul>
 					<br>
-					<li class="text-[5.1vh]">4.) Role of Approaches</li>
+					<li class="text-[4.1vh]">4.) Role of Approaches</li>
 					<br>
 					<ul class="b text-[2.1vh]"> 
 						<li>When using synthetic data, what roles do state-of-the-art approaches in fine-tuning, transfer learning and adapters play in improving the performance of MT systems to process (particularly low-resource) language variations effectively?</li>
@@ -1363,8 +1432,39 @@ Low-Res is Beautiful → Life is Beautiful (1997)
 		</mybody>
 	</Layout></Slide>
 
-
+	<Slide><Layout>
+		<titlebar > Data Quality </titlebar>
+		<mybody class="mt-[-2%]">
+			Naive denotes data that has been collected via means such as opustools which encompasses a range of different text corpora of varying degrees of quality. This data contains a lot of noise. Sentences that a ill-aligned, sentences that are of low quality, and even text from very different languages. (Show Examples: Corpora in which the aligned sentence is the same in both languages AND sometimes Chinese or Bengali characters labelled to be German or Bavarian text...)
+			<br>
+			Clean is the data that has gone through a rudimentary round of preprocessing such as detecting the language based on the script in which the characters are written and estimating the validity of sentence alignments by comparing their length (reasoning that a sentence more than x times the length of another sentence, can hardly be considered to be -well-aligned-.
+			<br>
+			Informed will either be all those data that has been labeled and evaluated by human native speaker of the corresponding language (for aligned text: translators)
+		</mybody>
+	</Layout></Slide>
 	
+	<Slide><Layout>
+		<titlebar > Feature Validity </titlebar>
+		<mybody class="mt-[-2%]">
+			Guess is similar to the above -naive- as it is based on automatic functions and a data-driven approach which can be applied without access to native speakers, experts, or linguistic literature to draw from. As the name indicates, these rules are very basic and might be considered close to guessing the correct replacement of a word or subword unit. They a high in number (thousands) but also include single character replacements and removals without concern for the context inside the text.
+			<br>
+			Reason is an improved version of the rules from above in which multiple quality assuring measures are taken. Such as preventing the replacement of single characters with an empty string (without taking the context into account) which results in entire texts missing a set of characters. This is accomplished by including a context-window around the sub-word units during replacement rule creation (a reasonable approach for lex is still needed). Currently this window has a length of 1 in each direction.
+			Therefore, the aligned word-pair fochgebiet → fachgebiet would not result in a rule replacing o → a, but foc → fac.
+			<br>
+			Authentic is an approach of using replacement rules that have been derived from descriptions in scientific literature by expert linguists.
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Perturbation Type </titlebar>
+		<mybody class="mt-[-2%]">
+			Lex denotes lexicographic replacements of entire words based on bilingual word lists.
+			<br>
+			Mor denotes morphological replacements of sub-word units based on rules derived by processing bilingual word lists.
+			<br>
+			All denotes the combination of both previous replacements by applying morphological ones after the lexicographic ones. During this process, the lexicographic replacement marks each replaced word, such that they are ignored during the morphological replacement to not distort properly replaced words as an aftereffect.
+		</mybody>
+	</Layout></Slide>
 
 
 	<!-- to mimic the latex template  -->
