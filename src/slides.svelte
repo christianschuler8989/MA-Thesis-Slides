@@ -702,30 +702,249 @@
 	-->
 	<Slide><Layout>
 		<titlebar > Synthetic Data </titlebar>
-		<mybody>
-			<div class="flex items-center justify-center">
-				<figure class="mx-auto my-auto h-[60%] w-[60%]" >
-					<img src="construction-itsupport.png" alt="relatedworkview" style="max-height:100%; max-width:100%;">
-				<figcaption class="text-[1.8vh]">
-					Results
+		<mybody style="flex-direction:column">
+			<!-- <div class="flex items-center justify-center"> -->
+				<table class="text-[2.6vh]" style="width:100%">
+					<!-- <colgroup>
+						<col span="1" style="background-color: #66d666">
+						<col span="1" style="background-color: #cc66d6">
+						<col span="1" style="background-color: #66d3d6">
+						<col span="1" style="background-color: #d66866">
+						<col span="1" style="background-color: #b2fffd">
+					</colgroup> -->
+				<tr>  
+					<th>Source</th>
+					<th>Target</th>
+					<th>Data Quality</th>
+					<th>Feature Validity</th>
+					<th>Perturbation Type</th>
+					<th style="width:70%">Sentence</th>
+				</tr>  
+				<tr>  
+					<th style="background-color: #ebf067">German</th>
+					<th style="background-color: #66d666">Bavarian</th>
+					<th>Clean</th>
+					<th>Reference</th>
+					<th>None</th>
+					<th>Die Sprache ist vom Aussterben bedroht , da sie nur von über 60-Jährigen gesprochen wird .</th> 
+				</tr>
+				<tr>  
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>  
+					<th style="background-color: #ebf067">German</th>
+					<th style="background-color: #66d666">Bavarian</th>
+					<th>Clean</th>
+					<th style="background-color: #b2fffd">Reason</th>
+					<th style="background-color: #ff8383">Lex</th>
+					<th>Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
+				</tr>
+				<tr>  
+					<th style="background-color: #ebf067">German</th>
+					<th style="background-color: #66d666">Bavarian</th>
+					<th>Clean</th>
+					<th style="background-color: #b2fffd">Reason</th>
+					<th style="background-color: #d2b0fe">All</th>
+					<th>Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
+				</tr>
+				<tr>  
+					<th style="background-color: #ebf067">German</th>
+					<th style="background-color: #66d666">Bavarian</th>
+					<th>Clean</th>
+					<th style="background-color: #b2fffd">Reason</th>
+					<th style="background-color: #618eff">Mor</th>
+					<th>Dien Sproch ists vom Aussterbn bedrohts , da sien <mark>nua</mark> von üba 60-Jähring gsprochn wird .</th>
+				</tr>
+				<tr>  
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>  
+					<th style="background-color: #ebf067">German</th>
+					<th style="background-color: #66d666">Bavarian</th>
+					<th>Clean</th>
+					<th style="background-color: #7afffc">Relaxed</th>
+					<th style="background-color: #d2b0fe">All</th>
+					<th>Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
+				</tr>
+				<tr>  
+					<th style="background-color: #ebf067">German</th>
+					<th style="background-color: #66d666">Bavarian</th>
+					<th>Clean</th>
+					<th style="background-color: #7afffc">Relaxed</th>
+					<th style="background-color: #618eff">Mor</th>
+					<th class="text-[2.0vh]">Dien sprouch ischt vom aassderbn popbedrohd , da'n sien <mark>nua</mark> vonisch us̈popba 60-Ja'n̈hring gsprouchn wirdo .</th>
+				</tr>
+				<tr>  
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th style="background-color: #66d666">Bavarian</th>
+					<th style="background-color: #ebf067">German</th>
+					<th>Clean</th>
+					<th style="background-color: #7afffc">Relaxed</th>
+					<th style="background-color: #618eff">Mor</th>
+					<th class="text-[1.8vh]">Den sprachs ies voms austerms gelbedarohts weuch wassersen nur vos Leuten den iwas 60 jahr oit wassersern geredet wiert .</th>
+				</tr>
+				<tr>
+					<th style="background-color: #66d666">Bavarian</th>
+					<th style="background-color: #ebf067">German</th>
+					<th>Clean</th>
+					<th style="background-color: #7afffc">Relaxed</th>
+					<th style="background-color: #d2b0fe">All</th>
+					<th class="text-[2.4vh]">drei sprach kommt vom Aasterm bedroht wei se nua seit Leid drei iwa 60 jahre oid saint gredd wiad .</th>
+				</tr>
+				<tr>  
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>
+					<th style="background-color: #66d666">Bavarian</th>
+					<th style="background-color: #ebf067">German</th>
+					<th>Clean</th>
+					<th style="background-color: #b2fffd">Reason</th>
+					<th style="background-color: #618eff">Mor</th>
+					<th class="text-[2.2vh]">Den Sprache ises voms Aasterms bedrohts weich sen nur vos Leit den iwas 60 Joars oit sans gredds wiert .</th>
+				</tr>
+				<tr>
+					<th style="background-color: #66d666">Bavarian</th>
+					<th style="background-color: #ebf067">German</th>
+					<th>Clean</th>
+					<th style="background-color: #b2fffd">Reason</th>
+					<th style="background-color: #d2b0fe">All</th>
+					<th class="text-[2.2vh]">drei sprach bedeutet vom Aasterm bedroht wei se nua seit Leid drei iwa 60 jahres oid saint gredd wiad .</th>
+				</tr>
+				<tr>
+					<th style="background-color: #66d666">Bavarian</th>
+					<th style="background-color: #ebf067">German</th>
+					<th>Clean</th>
+					<th style="background-color: #b2fffd">Reason</th>
+					<th style="background-color: #ff8383">Lex</th>
+					<th class="text-[2.4vh]">drei sprach fiel vom Aasterm bedroht wei se nua seit Leid drei iwa 60 jahr oid bilden gredd wiad .</th>
+				</tr>
+				<tr>  
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+					<th></th>
+				</tr>
+				<tr>  
+					<th style="background-color: #66d666">Bavarian</th>
+					<th style="background-color: #ebf067">German</th>
+					<th>Clean</th>
+					<th>Reference</th>
+					<th>None</th>
+					<th>De Sproch is vom Aasterm bedroht wei se nua vo Leid de iwa 60 Joar oid san gredd wiad .</th>
+				</tr>
+				</table>
+				<figcaption class="text-[3.8vh]">
+					"Reason": 5 or more occurrences & length of less than 6
+					<br> "Relaxed": 1 or more occurrences & length of less than 7
 				</figcaption>
-				</figure>
-			</div>
 		</mybody>
 	</Layout></Slide>
+	<!--
+		German - Bavarian - Reference
+		Die Sprache ist vom Aussterben bedroht , da sie nur von über 60-Jährigen gesprochen wird .
+
+		German - Bavarian - Clean - Reason - Lex
+		Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .
+
+		German - Bavarian - Clean - Reason - All
+		Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .
+
+		German - Bavarian - Clean - Reason - Mor
+		Dien Sproch ists vom Aussterbn bedrohts , da sien nua von üba 60-Jähring gsprochn wird .
+
+		German - Bavarian - Clean - Relaxed - All
+		Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .
+
+		German - Bavarian - Clean - Relaxed - Mor
+		Dien sprouch ischt vom aassderbn popbedrohd , da'n sien nua vonisch us̈popba 60-Ja'n̈hring gsprouchn wirdo .
+
+		Bavarian - German - Clean - Relaxed - Mor
+		Den sprachs ies voms austerms gelbedarohts weuch wassersen nur vos Leuten den iwas 60 jahr oit wassersern geredet wiert .
+
+		Bavarian - German - Clean - Relaxed - All
+		drei sprach kommt vom Aasterm bedroht wei se nua seit Leid drei iwa 60 jahre oid saint gredd wiad .
+
+		Bavarian - German - Clean - Reason - Mor
+		Den Sprache ises voms Aasterms bedrohts weich sen nur vos Leit den iwas 60 Joars oit sans gredds wiert .
+
+		Bavarian - German - Clean - Reason - All
+		drei sprach bedeutet vom Aasterm bedroht wei se nua seit Leid drei iwa 60 jahres oid saint gredd wiad .
+
+		Bavarian - German - Clean - Reason - Lex
+		drei sprach fiel vom Aasterm bedroht wei se nua seit Leid drei iwa 60 jahr oid bilden gredd wiad .
+
+		Bavarian - German - Reference
+		De Sproch is vom Aasterm bedroht wei se nua vo Leid de iwa 60 Joar oid san gredd wiad .
+	-->
 	
 	<!-- 
 	TODO: (15/29) Evaluation Metrics
 	Issues with BLEU
 	-->
 	<Slide><Layout>
-		<titlebar > Evaluation Metrics </titlebar>
+		<titlebar > Evaluation Metrics - BLEU (Papineni et al., 2002)</titlebar>
 		<mybody>
 			<div class="flex items-center justify-center">
-				<figure class="mx-auto my-auto h-[60%] w-[60%]" >
-					<img src="construction-itsupport.png" alt="relatedworkview" style="max-height:100%; max-width:100%;">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="ChameleonMT-EVAL-BLEU.png" alt="evaluationBLEU" style="max-height:100%; max-width:100%;">
 				<figcaption class="text-[1.8vh]">
-					Results
+					BLEU (Bilingual Evaluation Understudy): is an evaluation metric that matches n-grams for evaluation of translation with explicit ordering.  
+					<br> Designed to be used for several reference translation, in practice it's used with only the single one.  
+					<br> BLEU is infamously dependent on the tokenization technique, and scores achieved with different ones are incomparable. (Post, 2018)
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Evaluation Metrics - TER (Snover et al., 2005) </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="ChameleonMT-EVAL-TER.png" alt="evaluationBLEU" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					TER (Translation Error (sometimes Edit) Rate): is a useful metric for evaluating machine translation quality, and it can be effective even in low-resourced scenarios.
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Evaluation Metrics - chrF (Popović, 2015)</titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="ChameleonMT-EVAL-chrF.png" alt="evaluationBLEU" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					chrF (Character n-gram F-score): is a robust metric for evaluating translation quality, especially for languages with complex morphology. 
+					<br> It’s less sensitive to tokenization issues and can provide a more nuanced view of translation quality by focusing on character-level matches. 
+					<br> This makes it particularly useful for low-resourced languages or those with rich morphological variations.
 				</figcaption>
 				</figure>
 			</div>
