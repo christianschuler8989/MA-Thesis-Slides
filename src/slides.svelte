@@ -288,30 +288,52 @@
 		<mybody>
 			<div class="flex items-center justify-center">
 				<ul class="a" >
-					<li>(1.) What is the performance of the current state-of-the-art models in translating dialects?</li>
+					<li class="text-[5.1vh]">1.) State-of-the-art Dialect-MT Performance</li>
+					<!-- <br>
+					<ul class="b text-[2.1vh]"> 
+						<li>What is the performance of the current state-of-the-art models in translating dialects?</li>
+					</ul> -->
 					<br>
-					<li>(2.) Can we incorporate linguistic information in MT to synthetically generate sentences in language variants so that dialects of various (and especially low-resource) languages can be processed more efficiently?</li>
+					<li class="text-[5.1vh]">2.) Linguistic Information for Synthetic Sentences</li>
+					<!-- <br>
+					<ul class="b text-[2.1vh]"> 
+						<li>Can we incorporate linguistic information in MT to synthetically generate sentences in language variants so that dialects of various <br> (and especially low-resource) languages can be processed more efficiently?</li>
+					</ul> -->
 					<br>
-					<li>(3.) When using synthetic data, what roles do state-of-the-art approaches in fine-tuning, transfer learning and adapters play in improving the performance of MT systems to process (particularly low-resource) language variations effectively?</li>
+					<li class="text-[5.1vh]">3.) Requirements of Different Languages</li>
+					<!-- <br>
+					<ul class="b text-[2.1vh]"> 
+						<li>What are requirements for deriving tools and processes that can be applied to vastly different languages from various language families?</li>
+					</ul> -->
 					<br>
-					<li>(4.) What are requirements for deriving tools and processes that can be applied to vastly different languages from various language families?</li>
+					<!-- <li class="text-[5.1vh]">(4.) Role of Approaches</li>
+					<br>
+					<ul class="b text-[2.1vh]"> 
+						<li>When using synthetic data, what roles do state-of-the-art approaches in fine-tuning, transfer learning and adapters play in improving the performance of MT systems to process (particularly low-resource) language variations effectively?</li>
+					</ul> -->
 				</ul>
 			</div>
 		</mybody>
 	</Layout></Slide>
 	
+	<div class="text-[1.1vh]"></div>
+
 	<Slide><Layout>
 		<titlebar > Exploring Dialect Machine Translation </titlebar>
 		<mybody>
 			<div class="flex items-center justify-center">
 				<figure class="mx-auto my-auto" >
 					<img src="exploratory-2023_11_28-benglai.png" alt="exploringDialectMT">
-					<figcaption class="text-[1.8vh]">
+					<figcaption class="text-[2.0vh]">
+						GT: Google Translate (https://translate.google.com/) via the translate-shell (https://github.com/soimort/translate-shell),
+						<br> NLLB: No Language Left Behind (Team et al., 2022), data primarily from CODET (Alam, Ahmadi, and Anastasopoulos, 2023)
+					</figcaption>
+					<!-- <figcaption class="text-[1.8vh]">
 						These exploratory experiments utilized the translation systems Google Translate (https://translate.google.com/) 
 						<br> via the translate-shell (https://github.com/soimort/translate-shell) 
 						<br> and NLLB (Team et al., 2022), various data sets (primarily CODET (Alam, Ahmadi, and Anastasopoulos, 2023)), 
 						<br> and the implementation of BLEU from Fairseq (https://github.com/facebookresearch/fairseq).
-					</figcaption>
+					</figcaption> -->
 				</figure>
 			</div>
 		</mybody>
@@ -324,7 +346,7 @@
 				<!-- <figure class="mx-auto my-auto h-[85%] w-[85%]" >
 					<img src="exploratory-2023_11_28-benglai.png" alt="exploringDialectMT">
 				</figure> -->
-				TODO: dd sources for models and text data
+
 				<figure class="mx-auto my-auto h-[85%] w-[85%]" >
 					<img src="exploratory-2023_11_28-centralKurdish.png" alt="exploringDialectMT">
 				</figure>
@@ -337,6 +359,7 @@
 					<img src="exploratory-2023_11_28-german.png" alt="exploringDialectMT">
 				</figure>
 			</div>
+
 			<!-- <div class="flex items-center justify-center h-[90%]">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
 					<img src="images/german-dialects.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
@@ -373,7 +396,7 @@
 					<a href="https://github.com/facebookresearch/fairseq/tree/nllb">
 						<img src="ChameleonMT-MT-NLLB-German.png" alt="performanceOfMTSystems" style="max-height:100%; max-width:100%;">
 					</a>
-				<figcaption class="text-[1.8vh]">
+				<figcaption class="text-[2.4vh]">
 					(NLLB Team et al., 2022) open-sourced models capable of high-quality translations between 200+ languages. 
 					<br> Any following mention of NLLB refers to the 3.3B model.
 				</figcaption>
@@ -386,18 +409,52 @@
 		<titlebar > German == German ? </titlebar>
 		<mybody>
 			<figure>
-				<video controls class="w-[80%] mx-auto my-auto p-2">
+				<video controls class="w-[100%] mx-auto my-auto p-2">
 					<source src="/video/german_dialects.mp4" type="video/mp4" />
 					<track kind="captions" label="English" srclang="eng" src="media-video-captions-eng.vtt"/>
 					<track kind="captions" label="German" srclang="deu" src="media-video-captions-deu.vtt" default/>
 				</video>
-				<figcaption class="text-[1.8vh]"> 
+				<figcaption class="text-[3.2vh]"> 
 					Peter Frankenfeld - Die Wetterkarte - Deutsche Dialekte 	
-				<div class="text-[1.1vh]">
+				<div class="text-[2.1vh]">
 					<br> (Source: https://www.youtube.com/watch?v=btlGMBA2XO4)
 				</div>
 				</figcaption>
 			</figure>
+		</mybody>
+	</Layout></Slide>
+	
+	<Slide><Layout>
+		<titlebar > German as Dialect Continuum </titlebar>
+		<mybody  class="mt-[-1%]">
+			<div class="flex items-center justify-center h-[90%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/Lameli_2008_German_Dialect_Continuum_Map.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(Lameli, 2008) investigated local variants of German.
+					<div class="text-[1.1vh]">
+						<br> (Source: https://aktuell.nationalatlas.de/wp-content/uploads/08_09_Dialektraeume.pdf)
+					</div>
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > German as Dialect Continuum </titlebar>
+		<mybody  class="mt-[-1%]">
+			<div class="flex items-center justify-center h-[90%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/Lameli_2008_German_Dialect_Continuum_Table.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[2.4vh]">
+					(Lameli, 2008) displays the phonetic changes across German-speaking regions.
+					<div class="text-[1.1vh]">
+						<br> (Source: https://aktuell.nationalatlas.de/wp-content/uploads/08_09_Dialektraeume.pdf)
+					</div>
+				</figcaption>
+				</figure>
+			</div>
 		</mybody>
 	</Layout></Slide>
 
@@ -430,17 +487,40 @@
 		</mybody>
 	</Layout></Slide>
 
-	
 	<Slide><Layout>
-		<titlebar > German as Dialect Continuum </titlebar>
-		<mybody  class="mt-[-1%]">
+		<titlebar > (German) Language Varieties </titlebar>
+		<mybody class="mt-[-1%]">
 			<div class="flex items-center justify-center h-[90%]">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
-					<img src="images/Lameli_2008_German_Dialect_Continuum_Map.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
+					<img src="images/map-dialect-example-berliner-reddit.jpg" alt="datacleaning" style="max-height:100%; max-width:100%;">
 				<figcaption class="text-[1.8vh]">
-					(Lameli, 2008) investigated local variants of German.
+					(BaFi01, 2023) Es heist Berliner !
 					<div class="text-[1.1vh]">
-						<br> (Source: https://aktuell.nationalatlas.de/wp-content/uploads/08_09_Dialektraeume.pdf)
+						<br> (Source: https://www.reddit.com/r/deutschememes/comments/15tumg7/es_heist_berliner/)
+					</div>
+				</figcaption>
+				</figure>
+			</div>
+
+			<div class="flex items-center justify-center h-[90%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/map-dialect-example-berliner-bzberlin.jpg" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(BZ Die Stimme Berlins, 2014) Berliner, Pfannkuchen – ja, was denn nun?
+					<div class="text-[1.1vh]">
+						<br> (Source: https://www.bz-berlin.de/archiv-artikel/berliner-pfannkuchen-ja-was-denn-nun)
+					</div>
+				</figcaption>
+				</figure>
+			</div>
+
+			<div class="flex items-center justify-center h-[90%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/map-dialect-example-berliner-atlasalltagssprache.jpg" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					(Atlas zur deutschen Alltagssprache, 2011) Berliner/Krapfen
+					<div class="text-[1.1vh]">
+						<br> (Source: https://www.atlas-alltagssprache.de/runde-4/f03/)
 					</div>
 				</figcaption>
 				</figure>
@@ -448,63 +528,172 @@
 		</mybody>
 	</Layout></Slide>
 
-	<Slide><Layout>
-		<titlebar > German as Dialect Continuum </titlebar>
-		<mybody  class="mt-[-1%]">
-			<div class="flex items-center justify-center h-[90%]">
-				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
-					<img src="images/Lameli_2008_German_Dialect_Continuum_Table.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
-				<figcaption class="text-[1.8vh]">
-					(Lameli, 2008) displays the phonetic changes across German-speaking regions.
-					<div class="text-[1.1vh]">
-						<br> (Source: https://aktuell.nationalatlas.de/wp-content/uploads/08_09_Dialektraeume.pdf)
-					</div>
-				</figcaption>
-				</figure>
-			</div>
-		</mybody>
-	</Layout></Slide>
+
 
 	<script>newChapter("Methods & Experiments");</script>
-
-	<!-- 
-	TODO: (12/29) Linguistic Features
-	Examples from Multi-VALUE and co.
-	-->
-	<Slide><Layout>
-		<titlebar > Linguistic Features </titlebar>
-		<mybody>
-			<div class="flex items-center justify-center">
-				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
-					<img src="images/FILE_HERE" alt="datacleaning" style="max-height:100%; max-width:100%;">
-				<figcaption class="text-[1.8vh]">
-					Text:
-					<br> Text.
-				</figcaption>
-				</figure>
-			</div>
-		</mybody>
-	</Layout></Slide>
-
 	<Slide><Layout>
 		<titlebar > Bilingual Lexicon Induction </titlebar>
 		<mybody>
 			<div class="flex items-center justify-center">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
 					<img src="ChameleonMT-BLI-BLI.png" alt="bli" style="max-height:100%; max-width:100%;">
-				<figcaption class="text-[1.8vh]">
-					Inspiration for this figure:
+				<figcaption class="text-[2.4vh]">
+					Inspiration for this figure: (Irvine and Callison-Burch, 2017) A Comprehensive Analysis of Bilingual Lexicon Induction
 					<br> (Wang et al., 2021) Porject Report - Training Domain Specific Multilingually Aligned Word Embeddings
-					<br> (Irvine and Callison-Burch, 2017) A Comprehensive Analysis of Bilingual Lexicon Induction
 				</figcaption>
 				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
-		
-	<!-- 
-	TODO: + New Slide ? Struggles with MUSE ?
+	<Slide><Layout>
+		<titlebar > Aligning Vector Spaces via MUSE </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/MA-Thesis-BLI-MUSE-Fig1.png" alt="MUSE" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[2.4vh]">
+					(Conneau et al., 2018) introduced MUSE:
+					<br> Figure 1: Toy illustration of the method. (A) There are two distributions of word embeddings, English words
+					in red denoted by X and Italian words in blue denoted by Y , which we want to align/translate. Each dot
+					represents a word in that space. The size of the dot is proportional to the frequency of the words in the training
+					corpus of that language. (B) Using adversarial learning, we learn a rotation matrix W which roughly aligns the
+					two distributions. The green stars are randomly selected words that are fed to the discriminator to determine
+					whether the two word embeddings come from the same distribution. (C) The mapping W is further refined via
+					Procrustes. This method uses frequent words aligned by the previous step as anchor points, and minimizes an
+					energy function that corresponds to a spring system between anchor points. The refined mapping is then used
+					to map all words in the dictionary. (D) Finally, we translate by using the mapping W and a distance metric,
+					dubbed CSLS, that expands the space where there is high density of points (like the area around the word
+					“cat”), so that “hubs” (like the word “cat”) become less close to other word vectors than they would otherwise
+					(compare to the same region in panel (A)).
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > MUSE is Dead - Long live DialectBLI </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="MUSE-github-issue-sina.png" alt="MUSE" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[2.4vh]">
+					Found my error message in an github-issue, which never got solved.
+					<br> MUSE was archived on Oct 31, 2023.
+				</figcaption>
+				</figure>
+			</div>
+			<br>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/MA-Thesis-BLI-DialectBLI-Table1.png" alt="MUSE" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[2.4vh]">
+					(Artemova & Plank, 2023) Released BLI results for Bavarian and Alemannic.
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!-- <Slide><Layout>
+		<titlebar > Linguistic Features </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="ChameleonMT-SYNTH-SYNTH.png" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					The path to creating and using synthetic data.
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide> -->
+
+	<Slide><Layout>
+        <titlebar> The Idea </titlebar>
+        <mybody>
+            <div class="flex items-center justify-center">
+                <figure class="mx-auto my-auto h-[100%] w-[100%]" >
+                        <img src="ChameleonMT-Concept-InitialConcept.png" alt="pathToSyntheticData" style="max-height:100%; max-width:100%;">
+                    <figcaption class="text-[4.3vh]">
+                        Initial concept of what to do.
+                    </figcaption>
+                </figure>
+            </div>
+        </mybody>
+    </Layout></Slide>
+
+	<Slide><Layout>
+        <titlebar> The Plan </titlebar>
+        <mybody>
+            <div class="flex h-full items-center justify-center gap-[100px]">
+                <figure class="h-[75vh] w-[80vw] float-left mx-auto my-auto" style="overflow:auto">
+                        <img src="ChameleonMT-SYNTH-SYNTH.png" alt="pathToSyntheticData" style="display:inline">
+                    <figcaption class="text-[4.3vh]">
+                        The path to creating and using synthetic data.
+                    </figcaption>
+                </figure>
+            </div>
+        </mybody>
+    </Layout></Slide>
+
+	<Slide><Layout>
+        <titlebar> The Reality </titlebar>
+        <mybody>
+            <div class="flex h-full items-center justify-center gap-[100px]">
+                <figure class="h-[85vh] w-[100vw] float-left mx-auto my-auto" style="overflow:auto">
+                        <img src="MA-Thesis-Overview.png" alt="pathToSyntheticData" style="display:inline">
+                    <figcaption class="text-[4.3vh]">
+                        The descent into madness.
+                    </figcaption>
+                </figure>
+            </div>
+        </mybody>
+    </Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Linguistic Features </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="MA-Thesis-Feature-Extraction-Example.png" alt="featureExtraction" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					Derived via string matching on aligned words.
+				</figcaption>
+				</figure>
+			</div>
+
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="MA-Thesis-Feature-Extraction-Example_0.png" alt="featureExtraction" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					From linguistic features to replacement rule (candidates).
+				</figcaption>
+				</figure>
+			</div>
+
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="MA-Thesis-Feature-Extraction-Example_1.png" alt="featureExtraction" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					Considering the context of (un-)matched sub-word units.
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<!--
+	Bavarian → German "reason" (u_number >= 5 && u_length =< 5) and context_length = 1 
+		Prefixes: 47 lines 
+		Suffixes: 292 lines
+		Infixes: 138 lines
+
+	Bavarian → German "relaxed" (u_number >= 1 && u_length =< 6) and context_length = 1 
+		Prefixes: 507 lines 
+		Suffixes: 1093 lines
+		Infixes: 768 lines
 	-->
 
 	<!-- 
@@ -515,11 +704,10 @@
 		<titlebar > Synthetic Data </titlebar>
 		<mybody>
 			<div class="flex items-center justify-center">
-				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
-					<img src="images/FILE_HERE" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figure class="mx-auto my-auto h-[60%] w-[60%]" >
+					<img src="construction-itsupport.png" alt="relatedworkview" style="max-height:100%; max-width:100%;">
 				<figcaption class="text-[1.8vh]">
-					Text:
-					<br> Text.
+					Results
 				</figcaption>
 				</figure>
 			</div>
@@ -534,11 +722,10 @@
 		<titlebar > Evaluation Metrics </titlebar>
 		<mybody>
 			<div class="flex items-center justify-center">
-				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
-					<img src="images/FILE_HERE" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figure class="mx-auto my-auto h-[60%] w-[60%]" >
+					<img src="construction-itsupport.png" alt="relatedworkview" style="max-height:100%; max-width:100%;">
 				<figcaption class="text-[1.8vh]">
-					Text:
-					<br> Text.
+					Results
 				</figcaption>
 				</figure>
 			</div>
@@ -568,6 +755,16 @@
 		</mybody>
 	</Layout></Slide>
 
+	<Slide><Layout>
+		<titlebar > Data Cleaning </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center h-[100%]">
+				More than 20% non-German characters.
+
+			</div>
+		</mybody>
+	</Layout></Slide>
+
 
 	<!-- 
 	TODO: (17/29) What I got out of it [Results]
@@ -578,11 +775,10 @@
 		<titlebar > What I got out of it</titlebar>
 		<mybody>
 			<div class="flex items-center justify-center">
-				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
-					<img src="images/MA-Data-Maps-20240627135334614.webp" alt="datacleaning" style="max-height:100%; max-width:100%;">
+				<figure class="mx-auto my-auto h-[60%] w-[60%]" >
+					<img src="construction-itsupport.png" alt="relatedworkview" style="max-height:100%; max-width:100%;">
 				<figcaption class="text-[1.8vh]">
-					(Burghardt et al., 2016) created (but did not release) a lexicon of Bavarian dialects.
-					<br> Overview of the main Bavarian dialect families and the regions where they occur.
+					Results
 				</figcaption>
 				</figure>
 			</div>
@@ -597,12 +793,54 @@
 	-->
 
 
+	
+	<!-- <script>newChapter("Main Challenge");</script> -->
+	<script>newChapter("Related Work");</script>
+	<Slide><Layout>
+		<titlebar > Related Work </titlebar>
+		<mybody class="mt-[-2%]">
+			<figure class="mx-auto my-auto h-[80%] w-[40%]" >
+				<img src="construction-itsupport.png" alt="relatedworkview" style="max-height:100%; max-width:100%;">
+			<figcaption class="text-[2.8vh]">
+				Impressions of related work.
+			</figcaption>
+			</figure>
+
+			<div class="h-[90%] w-[40%] mx-auto my-auto">
+				<iframe src="pdf/2024_MA_Thesis_Christian_Schuler_RelatedWork.pdf#page=1&zoom=80" frameBorder="0" scrolling="auto" height="100%" width="100%" title="ESSV Publication"></iframe>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Inspiration - Cross-Dialectal English NLP</titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<ul class="a" >
+					<li>VALUE (Ziems et al., 2022) & Multi-VALUE (Ziems et al., 2023)</li>
+					<br>
+					<ul class="b"> 
+						<li>50 English dialects and 29 - 136 linguistic features each </li> <!-- Aboriginal English, Australian English, Chicano English, Indian English, Sri Lankan English, Welsh English, ... -->
+						<li>Examples: 
+							<ul class="c">
+								<li>Where are your books? - Where are y’all’s books? (your_yalls)</li> <!-- your_yalls -->
+								<li>That isn’t fair. - That ain’t fair. (aint_be)</li> <!-- aint_be -->
+								<li>She is at home. - She at home. (drop_copula_be_locative)</li> <!-- drop_copula_be_locative -->
+								<li>When is she coming? - When she coming? (drop_aux_wh)</li> <!-- drop_aux_wh -->
+							</ul> 
+						
+					</ul>
+					<br>
+				</ul>
+			</div>
+		</mybody>
+	</Layout></Slide>
+	
+
 	<!-- 
 	TODO: (18/29) Origin of the Noise - Bavarian Dialect Families
 	Highlight the "Mittelbairisch" for next slide transition
 	-->
-	<!-- <script>newChapter("Main Challenge");</script> -->
-	<script>newChapter("Related Work");</script>
 	<Slide><Layout>
 		<titlebar > Origin of the Noise - Bavarian Dialect Families</titlebar>
 		<mybody>
@@ -806,16 +1044,16 @@
 		</mybody>
 	</Layout></Slide>
 
-
-	<!-- 
-	TODO: (27/29) NLLB-Tuning
-	→ Title: Two Hundred And One Languages
-	-->
 	<Slide><Layout>
-		<titlebar > NLLB-Tuning </titlebar>
+		<titlebar > Clean Data - Better Alignments </titlebar>
 		<mybody>
-			<div class="flex items-center justify-center">
-				Once the quality of data cleaning and perturbation has reached the next step. 
+			<div class="flex items-center justify-center h-[90%]">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="LanguageData-TextAlignments.png" alt="wikidumpprogress" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					Notion to reduce noise in available (aligned) data sources via language models. 
+				</figcaption>
+				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
@@ -843,16 +1081,16 @@
 		</mybody>
 	</Layout></Slide>
 
+	
+	<!-- 
+	TODO: (27/29) NLLB-Tuning
+	→ Title: Two Hundred And One Languages
+	-->
 	<Slide><Layout>
-		<titlebar > Clean Data - Better Alignments </titlebar>
+		<titlebar > NLLB-Tuning </titlebar>
 		<mybody>
-			<div class="flex items-center justify-center h-[90%]">
-				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
-					<img src="LanguageData-TextAlignments.png" alt="wikidumpprogress" style="max-height:100%; max-width:100%;">
-				<figcaption class="text-[1.8vh]">
-					Notion to reduce noise in available (aligned) data sources via language models. 
-				</figcaption>
-				</figure>
+			<div class="flex items-center justify-center">
+				Once the quality of data cleaning and perturbation has reached the next step. 
 			</div>
 		</mybody>
 	</Layout></Slide>
@@ -880,11 +1118,47 @@ Low-Res is Beautiful → Life is Beautiful (1997)
 	<Slide><Layout>
 		<titlebar > References </titlebar>
 		<mybody class="mt-[-2%]">
-			<div class="h-[75%] w-[90%] mx-auto my-auto">
-				<iframe src="media-sample.pdf#page=1&zoom=100" frameBorder="0" scrolling="auto" height="100%" width="100%" title="ESSV Publication"></iframe>
+			<div class="h-[90%] w-[90%] mx-auto my-auto">
+				<iframe src="pdf/2024_MA_Thesis_Christian_Schuler_References.pdf#page=1&zoom=100" frameBorder="0" scrolling="auto" height="100%" width="100%" title="ESSV Publication"></iframe>
 			</div>
 		</mybody>
 	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Guiding Research Questions </titlebar>
+		<mybody class="mt-[-2%]">
+			<div class="flex items-center justify-center">
+				<ul class="a" >
+					<li class="text-[5.1vh]">1.) State-of-the-art Performance</li>
+					<br>
+					<ul class="b text-[2.1vh]"> 
+						<li>What is the performance of the current state-of-the-art models in translating dialects?</li>
+					</ul>
+					<br>
+					<li class="text-[5.1vh]">2.) Linguistic Information for Synthetic Sentences</li>
+					<br>
+					<ul class="b text-[2.1vh]"> 
+						<li>Can we incorporate linguistic information in MT to synthetically generate sentences in language variants so that dialects of various <br> (and especially low-resource) languages can be processed more efficiently?</li>
+					</ul>
+					<br>
+					<li class="text-[5.1vh]">3.) Requirements of Different Languages</li>
+					<br>
+					<ul class="b text-[2.1vh]"> 
+						<li>What are requirements for deriving tools and processes that can be applied to vastly different languages from various language families?</li>
+					</ul>
+					<br>
+					<li class="text-[5.1vh]">4.) Role of Approaches</li>
+					<br>
+					<ul class="b text-[2.1vh]"> 
+						<li>When using synthetic data, what roles do state-of-the-art approaches in fine-tuning, transfer learning and adapters play in improving the performance of MT systems to process (particularly low-resource) language variations effectively?</li>
+					</ul>
+				</ul>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	
 
 
 	<!-- to mimic the latex template  -->
