@@ -52,7 +52,7 @@
 
 	<!-- title page -->
 	<Slide><Layout>
-		<div class="m-16 flex h-[30vh] w-[95vw] bg-[var(--themecolor)] text-white items-center justify-center gap-[100px]">
+		<div class="m-16 mx-auto flex h-[30vh] w-[95vw] bg-[var(--themecolor)] text-white items-center justify-center gap-[100px]">
 			<div>
 				<div class="text-[6vh]">
 					<span id="mytitle"> </span>
@@ -321,9 +321,8 @@
 	<Slide><Layout>
 		<titlebar > Exploring Dialect Machine Translation </titlebar>
 		<mybody>
-			<div class="flex items-center justify-center">
-				<figure class="mx-auto my-auto" >
-					<img src="exploratory-2023_11_28-benglai.png" alt="exploringDialectMT">
+				<figure class="mx-auto my-auto h-[100%] w-full pt-[2%]" >
+					<img src="exploratory-2023_11_28-benglai.png" alt="exploringDialectMT" class="h-[90%] w-auto">
 					<figcaption class="text-[2.0vh]">
 						GT: Google Translate (https://translate.google.com/) via the translate-shell (https://github.com/soimort/translate-shell),
 						<br> NLLB: No Language Left Behind (Team et al., 2022), data primarily from CODET (Alam, Ahmadi, and Anastasopoulos, 2023)
@@ -335,7 +334,6 @@
 						<br> and the implementation of BLEU from Fairseq (https://github.com/facebookresearch/fairseq).
 					</figcaption> -->
 				</figure>
-			</div>
 		</mybody>
 	</Layout></Slide>
 
