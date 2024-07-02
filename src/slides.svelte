@@ -746,7 +746,7 @@
 					<th>Clean</th>
 					<th>Reference</th>
 					<th>None</th>
-					<th class="text-[2.0vh]">Die Sprache ist vom Aussterben bedroht , da sie nur von über 60-Jährigen gesprochen wird .</th> 
+					<th class="text-[1.8vh]">Die Sprache ist vom Aussterben bedroht , da sie nur von über 60-Jährigen gesprochen wird .</th> 
 				</tr>
 				<tr>  
 					<th style="background-color: #ebf067">German</th>
@@ -754,7 +754,7 @@
 					<th>Clean</th>
 					<th>Reference</th>
 					<th>None</th>
-					<th class="text-[2.0vh]">The language is endangered , as it is only spoken by people over 60 .</th> 
+					<th class="text-[1.8vh]">The language is endangered , as it is only spoken by people over 60 .</th> 
 				</tr>
 				<tr>  
 					<th></th>
@@ -770,7 +770,7 @@
 					<th>Clean</th>
 					<th style="background-color: #b2fffd">Reason</th>
 					<th style="background-color: #ff8383">Lex</th>
-					<th class="text-[2.0vh]">Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
+					<th class="text-[1.8vh]">Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
 				</tr>
 				<tr>  
 					<th style="background-color: #ebf067">German</th>
@@ -778,7 +778,7 @@
 					<th>Clean</th>
 					<th style="background-color: #b2fffd">Reason</th>
 					<th style="background-color: #d2b0fe">All</th>
-					<th class="text-[2.0vh]">Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
+					<th class="text-[1.8vh]">Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
 				</tr>
 				<tr>  
 					<th style="background-color: #ebf067">German</th>
@@ -786,7 +786,7 @@
 					<th>Clean</th>
 					<th style="background-color: #b2fffd">Reason</th>
 					<th style="background-color: #618eff">Mor</th>
-					<th class="text-[2.0vh]">Dien Sproch ists vom Aussterbn bedrohts , da sien <mark>nua</mark> von üba 60-Jähring gsprochn wird .</th>
+					<th class="text-[1.8vh]">Dien Sproch ists vom Aussterbn bedrohts , da sien <mark>nua</mark> von üba 60-Jähring gsprochn wird .</th>
 				</tr>
 				<tr>  
 					<th></th>
@@ -802,7 +802,7 @@
 					<th>Clean</th>
 					<th style="background-color: #7afffc">Relaxed</th>
 					<th style="background-color: #d2b0fe">All</th>
-					<th class="text-[2.0vh]">Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
+					<th class="text-[1.8vh]">Die lateinischn ist vom aussterm bedroht , da sie nur von über 60-Jährigen gsprochn wird .</th>
 				</tr>
 				<tr>  
 					<th style="background-color: #ebf067">German</th>
@@ -810,7 +810,7 @@
 					<th>Clean</th>
 					<th style="background-color: #7afffc">Relaxed</th>
 					<th style="background-color: #618eff">Mor</th>
-					<th class="text-[2.0vh]">Dien sprouch ischt vom aassderbn popbedrohd , da'n sien <mark>nua</mark> vonisch us̈popba 60-Ja'n̈hring gsprouchn wirdo .</th>
+					<th class="text-[1.8vh]">Dien sprouch ischt vom aassderbn popbedrohd , da'n sien <mark>nua</mark> vonisch us̈popba 60-Ja'n̈hring gsprouchn wirdo .</th>
 				</tr>
 				<tr>  
 					<th style="background-color: #ebf067">German</th>
@@ -818,7 +818,7 @@
 					<th>Clean</th>
 					<th style="background-color: #7afffc">Relaxed</th>
 					<th style="background-color: #618eff">Mor</th>
-					<th class="text-[2.0vh]">He 's threatened by the Aassderbn Pop because he 's a new member of the 60-year-old pop group .</th> 
+					<th class="text-[1.8vh]">He 's threatened by the Aassderbn Pop because he 's a new member of the 60-year-old pop group .</th> 
 				</tr>
 				<tr>  
 					<th></th>
@@ -842,7 +842,7 @@
 					<th>Clean</th>
 					<th style="background-color: #7afffc">Relaxed</th>
 					<th style="background-color: #618eff">Mor</th>
-					<th class="text-[2.0vh]">The only people who could speak the language of the world were those who had spoken it sixty years ago .</th> 
+					<th class="text-[1.8vh]">The only people who could speak the language of the world were those who had spoken it sixty years ago .</th> 
 				</tr>
 				<tr>
 					<th style="background-color: #66d666">Bavarian</th>
@@ -850,7 +850,7 @@
 					<th>Clean</th>
 					<th style="background-color: #7afffc">Relaxed</th>
 					<th style="background-color: #d2b0fe">All</th>
-					<th class="text-[2.4vh]">drei sprach kommt vom Aasterm bedroht wei se nua seit Leid drei iwa 60 jahre oid saint gredd wiad .</th>
+					<th class="text-[1.8vh]">drei sprach kommt vom Aasterm bedroht wei se nua seit Leid drei iwa 60 jahre oid saint gredd wiad .</th>
 				</tr>
 				<tr>  
 					<th></th>
@@ -866,7 +866,7 @@
 					<th>Clean</th>
 					<th style="background-color: #b2fffd">Reason</th>
 					<th style="background-color: #618eff">Mor</th>
-					<th class="text-[2.2vh]">Den Sprache ises voms Aasterms bedrohts weich sen nur vos Leit den iwas 60 Joars oit sans gredds wiert .</th>
+					<th class="text-[1.8vh]">Den Sprache ises voms Aasterms bedrohts weich sen nur vos Leit den iwas 60 Joars oit sans gredds wiert .</th>
 				</tr>
 				<tr>
 					<th style="background-color: #66d666">Bavarian</th>
@@ -874,7 +874,7 @@
 					<th>Clean</th>
 					<th style="background-color: #b2fffd">Reason</th>
 					<th style="background-color: #d2b0fe">All</th>
-					<th class="text-[2.2vh]">drei sprach bedeutet vom Aasterm bedroht wei se nua seit Leid drei iwa 60 jahres oid saint gredd wiad .</th>
+					<th class="text-[1.8vh]">drei sprach bedeutet vom Aasterm bedroht wei se nua seit Leid drei iwa 60 jahres oid saint gredd wiad .</th>
 				</tr>
 				<tr>
 					<th style="background-color: #66d666">Bavarian</th>
@@ -882,7 +882,7 @@
 					<th>Clean</th>
 					<th style="background-color: #b2fffd">Reason</th>
 					<th style="background-color: #ff8383">Lex</th>
-					<th class="text-[2.4vh]">drei sprach fiel vom Aasterm bedroht wei se nua seit Leid drei iwa 60 jahr oid bilden gredd wiad .</th>
+					<th class="text-[1.8vh]">drei sprach fiel vom Aasterm bedroht wei se nua seit Leid drei iwa 60 jahr oid bilden gredd wiad .</th>
 				</tr>
 				<tr>  
 					<th></th>
@@ -898,7 +898,7 @@
 					<th>Clean</th>
 					<th>Reference</th>
 					<th>None</th>
-					<th class="text-[2.0vh]">De Sproch is vom Aasterm bedroht wei se nua vo Leid de iwa 60 Joar oid san gredd wiad .</th>
+					<th class="text-[1.8vh]">De Sproch is vom Aasterm bedroht wei se nua vo Leid de iwa 60 Joar oid san gredd wiad .</th>
 				</tr>
 				<tr>  
 					<th style="background-color: #66d666">Bavarian</th>
@@ -906,12 +906,12 @@
 					<th>Clean</th>
 					<th>Reference</th>
 					<th>None</th>
-					<th class="text-[2.0vh]">De Sproch is threatened by aasterm we se nua vo Leid de iwa 60 years oid san gredd wiad .</th> 
+					<th class="text-[1.8vh]">De Sproch is threatened by aasterm we se nua vo Leid de iwa 60 years oid san gredd wiad .</th> 
 				</tr>
 				</table>
-				<figcaption class="text-[2.5vh]">
+				<figcaption class="text-[2.4vh]">
 					"Reason": 5 or more occurrences & length of less than 6
-					<br> "Relaxed": 1 or more occurrences & length of less than 7
+					<span class="w-[5%]"> </span> "Relaxed": 1 or more occurrences & length of less than 7
 				</figcaption>
 		</mybody>
 	</Layout></Slide>
