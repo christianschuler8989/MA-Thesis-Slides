@@ -1009,7 +1009,7 @@
 	Highlight ~2 (important) examples to talk about.
 	-->
 	<Slide><Layout>
-		<titlebar > Data Cleaning </titlebar>
+		<titlebar > "Aligned" Data </titlebar>
 		<mybody>
 			<div class="flex items-center justify-center h-[100%]">
 				<figure class="mx-auto my-auto w-[100%]" >
@@ -1030,7 +1030,22 @@
 		<titlebar > Data Cleaning </titlebar>
 		<mybody>
 			<div class="flex items-center justify-center h-[100%]">
-				More than 20% non-German characters.
+				<ul class="a" >
+					<li>Based on human-/machine labelled quality.</li>
+					<br>
+					<li>More than 20% non-German characters.</li>
+					<br>
+					<li>Once side more than 3 times as long a the other.</li>
+					<br>
+					<li>Extremely long entries (over 2000 characters).</li>
+					<br>
+					<li>Parenthesized text, same for brackets.</li>
+					<br>
+					<li>Websites, HTML code, special symbols, ...</li>
+					<br>
+					<br>
+				</ul>
+				
 
 			</div>
 		</mybody>
@@ -1043,19 +1058,74 @@
 	-->
 	<script>newChapter("Results");</script>
 	<Slide><Layout>
-		<titlebar > What I got out of it</titlebar>
+		<titlebar > Current Numbers</titlebar>
 		<mybody>
-			<div class="flex items-center justify-center">
-				<figure class="mx-auto my-auto h-[60%] w-[60%]" >
-					<img src="construction-itsupport.png" alt="relatedworkview" style="max-height:100%; max-width:100%;">
+			<div class="flex items-center justify-center w-[50%]" style="flex-direction: column;">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="MA-Thesis-EVAL-Tab11.png" alt="featureExtraction" style="max-height:100%; max-width:100%;">
 				<figcaption class="text-[1.8vh]">
-					Results
+					Evaluation Metrics for German perturbed to Bavarian.
+				</figcaption>
+				</figure>
+
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="MA-Thesis-EVAL-Tab12.png" alt="featureExtraction" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					Evaluation Metrics for Bavarian perturbed to German.
+				</figcaption>
+				</figure>
+
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="MA-Thesis-EVAL-Tab13.png" alt="featureExtraction" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[1.8vh]">
+					Evaluation Metrics for Bavarian perturbed (translated) to German (translated).
 				</figcaption>
 				</figure>
 			</div>
 		</mybody>
 	</Layout></Slide>
 
+	<Slide><Layout>
+		<titlebar > Current Numbers - 1 </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center w-[90%]" style="flex-direction: column;">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="MA-Thesis-EVAL-Tab11.png" alt="featureExtraction" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[3.8vh]">
+					Evaluation Metrics for German perturbed to Bavarian.
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Current Numbers - 2 </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center w-[90%]" style="flex-direction: column;">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="MA-Thesis-EVAL-Tab12.png" alt="featureExtraction" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[3.8vh]">
+					Evaluation Metrics for Bavarian perturbed to German.
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+	<Slide><Layout>
+		<titlebar > Current Numbers - 3 </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center w-[90%]" style="flex-direction: column;">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="MA-Thesis-EVAL-Tab13.png" alt="featureExtraction" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[3.8vh]">
+					Evaluation Metrics for Bavarian perturbed (translated) to German (translated).
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
 
 	<!-- 
 	TODO: ? New Slide ? Me and ma sea of Papers
@@ -1222,13 +1292,31 @@
 	
 	
 	<script>newChapter("Next Steps");</script>
+	<!-- 
+	TODO: (27/29) NLLB-Tuning
+	→ Title: Two Hundred And One Languages
+	-->
+	<Slide><Layout>
+		<titlebar > NLLB-Tuning - Two Hundred And One Languages </titlebar>
+		<mybody>
+			<ul class="a" >
+				<li>Following the guide for finetuning and curating NLLB-200 with OpenNMT-py from:</li>
+				<br>
+				<ul class="b text-[2.5vh]"> 
+					<li>(https://forum.opennmt.net/t/finetuning-and-curating-nllb-200-with-opennmt-py/5238/20) </li>
+				</ul>
+				<br>
+				<li>Once the quality of data cleaning and perturbation has reached the next step.</li>
+			</ul>
+		</mybody>
+	</Layout></Slide>
 
 	<!-- 
 	TODO: (23/29) Sorting Wikipedia Articles - Alemannic Example
 	→ Title: Falling Down (the Rabbit Hole)
 	-->
 	<Slide><Layout>
-		<titlebar > Sorting Wikipedia Articles - Alemannic Example </titlebar>
+		<titlebar > Sorting Alemannic Wikipedia - Falling Down (the Rabbit Hole) </titlebar>
 		<mybody class="mt-[-2%]">
 			<div class="flex items-center justify-center h-[80%]">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
@@ -1252,11 +1340,11 @@
 	→ Title: "12 Angry Subdialects"
 	-->
 	<Slide><Layout>
-		<titlebar > Sorting Wikipedia Articles - Alemannic Example </titlebar>
+		<titlebar > Sorting Alemannic Wikipedia - 12 Angry Subdialects </titlebar>
 		<mybody>
 			<div class="flex items-center justify-center">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
-					<img src="images/MA-Thesis-Alemannic-Lambrecht-Table.png" alt="alemannic_map" style="max-height:100%; max-width:100%;">
+					<img src="images/MA-Thesis-Alemannic-Lambrecht-Table-12.png" alt="alemannic_map" style="max-height:100%; max-width:100%;">
 				<figcaption class="text-[1.8vh]">
 					(Lambrecht et al., 2022): Splitting the Corpora via linguistic analysis.
 					<div class="text-[0.7vh]">
@@ -1273,16 +1361,16 @@
 	→ Title: Good Word Hunting
 	-->
 	<Slide><Layout>
-		<titlebar > Sorting Wikipedia Articles - Alemannic Example </titlebar>
+		<titlebar > Sorting Alemannic Wikipedia - Good Word Hunting </titlebar>
 		<mybody>
 			<div class="flex items-center justify-center">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
 					<img src="images/MA-Thesis-Alemannic-Lambrecht-Pie.png" alt="alemannic_map" style="max-height:100%; max-width:100%;">
-				<figcaption class="text-[1.8vh]">
+				<figcaption class="text-[2.1vh]">
 					(Lambrecht et al., 2022): Categorisation of Alemannic and Distribution of tagged articles.
 						<br> Margravian (mg), Basel German (bd), Swabian (sw), High Alemannic (ha), 
 						<br> Low Alemannic (na), Highest Alemannic (hoe), Alsatian (els), others (so).
-					<div class="text-[0.7vh]">
+					<div class="text-[1.0vh]">
 						<br> (Source: https://sigul-2022.ilc.cnr.it/wp-content/uploads/2022/06/MT-from-Standard-German-to-Alemannic-Dialects-Louisa-Lambrecht-Felix-Schneider-Alexander-Waibel.pdf)
 					</div>
 				</figcaption>
@@ -1294,15 +1382,31 @@
 	<!-- 
 	TODO: + New Slide ? (Lambrecht et al., 2022): "Splitting into Alemannic variants shows great improvements"
 	Also talk about how they just dropped the effing ball...
-	→ Title: The Day The Wikidump Was Still Cleaned
+	→ Title: The Day The Wikidump Stood Cleaned
 	-->
+	<Slide><Layout>
+		<titlebar > Sorting Alemannic Wikipedia - The Day The Wikidump Stood Cleaned </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center">
+				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
+					<img src="images/MA-Thesis-Alemannic-Lambrecht-TableResults.png" alt="alemannic_map" style="max-height:100%; max-width:100%;">
+				<figcaption class="text-[2.8vh]">
+					(Lambrecht et al., 2022): Splitting into Alemannic variants shows great improvements.
+					<div class="text-[1.3vh]">
+						<br> (Source: https://sigul-2022.ilc.cnr.it/wp-content/uploads/2022/06/MT-from-Standard-German-to-Alemannic-Dialects-Louisa-Lambrecht-Felix-Schneider-Alexander-Waibel.pdf)
+					</div>
+				</figcaption>
+				</figure>
+			</div>
+		</mybody>
+	</Layout></Slide>
 
 	<!-- 
 	TODO: (26/29) Sorting Wikipedia Articles - Current State
 	→ Title: A Fistful Of Dialects
 	-->
 	<Slide><Layout>
-		<titlebar > Wikidumps </titlebar>
+		<titlebar > Sorting Wikipedia Articles - A Fistful Of Dialects </titlebar>
 		<mybody>
 			<div class="flex items-center justify-center">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
@@ -1316,7 +1420,7 @@
 	</Layout></Slide>
 
 	<Slide><Layout>
-		<titlebar > Clean Data - Better Alignments </titlebar>
+		<titlebar > Clean for Alignments - Low-Res is Beautiful </titlebar>
 		<mybody>
 			<div class="flex items-center justify-center h-[90%]">
 				<figure class="mx-auto my-auto h-[100%] w-[100%]" >
@@ -1329,26 +1433,14 @@
 		</mybody>
 	</Layout></Slide>
 	
-	<!-- 
-	TODO: (27/29) NLLB-Tuning
-	→ Title: Two Hundred And One Languages
-	-->
-	<Slide><Layout>
-		<titlebar > NLLB-Tuning </titlebar>
-		<mybody>
-			<div class="flex items-center justify-center">
-				Once the quality of data cleaning and perturbation has reached the next step.
-				<br> Following the guide for Finetuning and curating NLLB-200 with OpenNMT-py from:
-				<br> https://forum.opennmt.net/t/finetuning-and-curating-nllb-200-with-opennmt-py/5238/20
-			</div>
-		</mybody>
-	</Layout></Slide>
+	
 
 
 	<Slide><Layout>
-		<titlebar class="text-[4.5vh]"> Beyond German - Northern Kurdish (Kurmanjî) and Central Kurdish (Soranî) </titlebar>
+		<titlebar class="text-[4.5vh]"> Beyond German - The Good, The Bad And Everything Else </titlebar>
 		<mybody>
-			<div class="flex items-center justify-center">
+			<div class="flex items-center justify-center" style="flex-direction: column;">
+				<p> Northern Kurdish (Kurmanjî) and Central Kurdish (Soranî) </p>
 				<ul class="a" >
 					<li>OpusTools provides (somewhat) aligned data for both</li>
 					<br>
@@ -1372,20 +1464,6 @@
 
 
 
-<!-- 
-TODO: + New Slide ? → Slide Title Easter Eggs
-The Unusual Suspects → The Usual Suspects (1995)
-12 Angry Subdialects → 12 Angry Men (1957)
-Falling Down (the Rabbit Hole) → Falling Down (1993)
-Two Hundred And One Languages → One Hundred And One Dalmatians (1961)
-Good Word Hunting → Good Will Hunting (1997)
-A Fistful Of Dialects → A Fistful Of Dollars (1964)
-The Day The Wikidump Was Still Cleaned → The Day The Earth Stood Still (1951)
-
-The Good, The Bad And The Others → The Good, The Bad And The Ugly (1967)
-Low-Res is Beautiful → Life is Beautiful (1997)
- -->
-
 
 
 	<script>newChapter("Appendix");</script>
@@ -1395,6 +1473,34 @@ Low-Res is Beautiful → Life is Beautiful (1997)
 		<mybody class="mt-[-2%]">
 			<div class="h-[90%] w-[90%] mx-auto my-auto">
 				<iframe src="pdf/2024_MA_Thesis_Christian_Schuler_References.pdf#page=1&zoom=100" frameBorder="0" scrolling="auto" height="100%" width="100%" title="ESSV Publication"></iframe>
+			</div>
+		</mybody>
+	</Layout></Slide>
+
+
+	<Slide><Layout>
+		<titlebar class="text-[4.5vh]"> Slide Title Bingo? </titlebar>
+		<mybody>
+			<div class="flex items-center justify-center" style="flex-direction: column;">
+				<ul class="a text-[3.5vh]" >
+					<li>The Unusual Suspects → The Usual Suspects (1995)</li>
+					<br>
+					<li>Two Hundred And One Languages → One Hundred And One Dalmatians (1961)</li>
+					<br>
+					<li>Falling Down (the Rabbit Hole) → Falling Down (1993)</li>
+					<br>
+					<li>12 Angry Subdialects → 12 Angry Men (1957)</li>
+					<br>
+					<li>Good Word Hunting → Good Will Hunting (1997)</li>
+					<br>
+					<li>The Day The Wikidump Stood Cleaned → The Day The Earth Stood Still (1951)</li>
+					<br>
+					<li>A Fistful Of Dialects → A Fistful Of Dollars (1964)</li>
+					<br>
+					<li>Low-Res is Beautiful → Life is Beautiful (1997)</li>
+					<br>
+					<li>The Good, The Bad And Everything Else  → The Good, The Bad And The Ugly (1967)</li>
+				</ul>
 			</div>
 		</mybody>
 	</Layout></Slide>
