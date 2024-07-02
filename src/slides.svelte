@@ -1140,15 +1140,15 @@
 	<Slide><Layout>
 		<titlebar > Related Work </titlebar>
 		<mybody class="mt-[-2%]">
-			<figure class="mx-auto my-auto h-[80%] w-[40%]" >
+			<!-- <figure class="mx-auto my-auto h-[80%] w-[40%]" >
 				<img src="construction-itsupport.png" alt="relatedworkview" style="max-height:100%; max-width:100%;">
 			<figcaption class="text-[2.8vh]">
 				Impressions of related work.
-			</figcaption>
-			</figure>
+			</figcaption> -->
+			<!-- </figure> -->
 
-			<div class="h-[90%] w-[40%] mx-auto my-auto">
-				<iframe src="pdf/2024_MA_Thesis_Christian_Schuler_RelatedWork.pdf#page=1&zoom=80" frameBorder="0" scrolling="auto" height="100%" width="100%" title="ESSV Publication"></iframe>
+			<div class="h-[90%] w-[90%] mx-auto my-auto">
+				<iframe src="pdf/2024_MA_Thesis_Christian_Schuler_RelatedWork.pdf#page=1&zoom=120" frameBorder="0" scrolling="auto" height="100%" width="100%" title="ESSV Publication"></iframe>
 			</div>
 		</mybody>
 	</Layout></Slide>
